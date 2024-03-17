@@ -1,8 +1,8 @@
 package org.project.travel_agency.Domain;
 
-public class Client extends Entity<Long>{
-    private final String name;
-    private final String email;
+public class Client extends Entity<Long> {
+    private String name;
+    private String email;
 
     public Client(String name, String email) {
         this.name = name;
@@ -15,5 +15,13 @@ public class Client extends Entity<Long>{
 
     public String getEmail() {
         return email;
+    }
+
+   public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

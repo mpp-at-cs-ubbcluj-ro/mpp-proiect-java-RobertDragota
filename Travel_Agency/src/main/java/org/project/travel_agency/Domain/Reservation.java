@@ -12,4 +12,20 @@ public class Reservation extends Entity<Long> {
         this.tickets = tickets;
         this.trip = trip;
     }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public Long getTickets() {
+        return tickets;
+    }
+
+    public Trip getTrip() {
+        return trip;
+    }
 }
