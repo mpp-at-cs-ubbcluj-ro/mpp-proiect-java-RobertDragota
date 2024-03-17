@@ -1,12 +1,11 @@
 package org.project.travel_agency.Repository.DB_Repository;
 
 import org.project.travel_agency.Domain.Trip;
-import org.project.travel_agency.Repository.RepoInterface;
 import org.project.travel_agency.Utility.DB_Utils;
 
 import java.util.Optional;
 
-public class Repo_Trip implements RepoInterface<Long, Trip>{
+public class Repo_Trip implements Repo_Trip_Intreface<Long, Trip>{
     private final DB_Utils DB_connection;
 
     public Repo_Trip(DB_Utils dbConnection) {

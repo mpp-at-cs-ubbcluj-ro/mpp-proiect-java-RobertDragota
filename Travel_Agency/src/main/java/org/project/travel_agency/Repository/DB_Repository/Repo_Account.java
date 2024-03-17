@@ -2,12 +2,11 @@ package org.project.travel_agency.Repository.DB_Repository;
 
 import org.project.travel_agency.Domain.Account;
 import org.project.travel_agency.Domain.Tuple;
-import org.project.travel_agency.Repository.RepoInterface;
 import org.project.travel_agency.Utility.DB_Utils;
 
 import java.util.Optional;
 
-public class Repo_Account implements RepoInterface<Tuple<Long,String>, Account> {
+public class Repo_Account implements Repo_Account_Interface<Tuple<Long, String>, Account> {
 
     private final DB_Utils DB_connection;
 

@@ -1,6 +1,7 @@
 package org.project.travel_agency.Domain;
 
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Trip extends Entity<Long>{
@@ -8,11 +9,11 @@ public class Trip extends Entity<Long>{
     private final String transportCompany;
     private final Long price;
     private final Long availableSeats;
-    private final Date date;
-    private final Date startHour;
-    private final Date finishHour;
+    private final LocalDateTime date;
+    private final LocalDateTime startHour;
+    private final LocalDateTime finishHour;
 
-    public Trip(String destination, String transportCompany, Long price, Long availableSeats, Date date, Date startHour, Date finishHour) {
+    public Trip(String destination, String transportCompany, Long price, Long availableSeats, LocalDateTime date,  LocalDateTime startHour, LocalDateTime finishHour) {
         this.destination = destination;
         this.transportCompany = transportCompany;
         this.price = price;

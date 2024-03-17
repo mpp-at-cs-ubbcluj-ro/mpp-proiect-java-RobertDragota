@@ -1,15 +1,15 @@
 package org.project.travel_agency.Domain;
 
-public class Reservation extends Entity<Long>{
-    private final User user;
+public class Reservation extends Entity<Long> {
+    private final Client client;
     private final String phoneNumber;
     private final Long tickets;
-    private final Long tripId;
+    private final Trip trip;
 
-    public Reservation(User user, String phoneNumber, Long tickets, Long tripId) {
-        this.user = user;
+    public Reservation(Client client, String phoneNumber, Long tickets, Trip trip) {
+        this.client = client;
         this.phoneNumber = phoneNumber;
         this.tickets = tickets;
-        this.tripId = tripId;
+        this.trip = trip;
     }
 }
