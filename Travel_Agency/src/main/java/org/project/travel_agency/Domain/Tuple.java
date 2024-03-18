@@ -11,11 +11,11 @@ public class Tuple<E1, E2> {
         this.e2 = e2;
     }
 
-    public E1 first() {
+    public E1 getFirst() {
         return e1;
     }
 
-    public E2 second() {
+    public E2 getSecond() {
         return e2;
     }
 

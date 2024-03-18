@@ -26,7 +26,7 @@ public class Tests {
 
         Assertions.assertEquals("Robert", actualClient.getName(), "Client name should match");
         Assertions.assertEquals("dragotarobert10@gmail.com", actualClient.getEmail(), "Client email should match");
-        clientRepository.delete(addedClient.get());
+        clientRepository.delete(actualClient);
     }
 
     @Test
