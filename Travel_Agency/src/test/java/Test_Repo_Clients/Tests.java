@@ -10,7 +10,9 @@ import org.project.travel_agency.Utility.DB_Utils;
 import java.util.Optional;
 
 public class Tests {
-    static private final DB_Utils DB_connection = new DB_Utils("jdbc:postgresql://localhost:5432/Travle_Agency", "robert12", "Asmodeus011235");
+
+    static private final DB_Utils DB_connection = new DB_Utils();
+
     static private final Repo_Client clientRepository = new Repo_Client(DB_connection);
 
     @Test

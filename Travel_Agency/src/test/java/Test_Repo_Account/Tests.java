@@ -8,11 +8,17 @@ import org.project.travel_agency.Domain.Client;
 import org.project.travel_agency.Repository.DB_Repository.Repo_Account;
 import org.project.travel_agency.Utility.DB_Utils;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Optional;
+import java.util.Properties;
 
 public class Tests {
-    static private final DB_Utils DB_connection = new DB_Utils("jdbc:postgresql://localhost:5432/Travle_Agency", "robert12", "Asmodeus011235");
+
+
+    static private final DB_Utils DB_connection = new DB_Utils();
     static private final Repo_Account repoAccount = new Repo_Account(DB_connection);
+
     @Test
     @DisplayName("Add account test")
     public void testAdd() {

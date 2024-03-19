@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.sql.*;
 import java.util.Optional;
 
-public class Repo_Account implements Repo_Account_Interface<Tuple<Long, String>, Account> {
+public class Repo_Account implements Repo_Account_Interface {
 
     private final DB_Utils DB_connection;
     private static final Logger logger = LoggerFactory.getLogger(Repo_Client.class);
