@@ -24,21 +24,15 @@ public class Tests {
         Trip trip = new Trip("Paris", "TravelCo", 500L, 20L, LocalDateTime.now(), LocalDateTime.now().plusHours(2), LocalDateTime.now().plusHours(12));
         trip.setId(2L);
         Reservation reservation = new Reservation(client, "1234567890", 2L, trip);
-        reservation = reservationRepository.add(reservation).orElse(null);
-
-        assert reservation != null;
-
-
-        // Add the reservation
-        Optional<Reservation> addedReservation = reservationRepository.add(reservation);
+        Optional<Reservation> reservation1 = reservationRepository.add(reservation);
 
         // Assertions
-        Assertions.assertTrue(addedReservation.isPresent(), "Reservation should be added");
+        Assertions.assertTrue(reservation1.isPresent(), "Reservation should be added");
 
-        Reservation actualReservation = addedReservation.get();
+        Reservation actualReservation = reservation1.get();
         Assertions.assertEquals("1234567890", actualReservation.getPhoneNumber(), "Reservation phone number should match");
         Assertions.assertEquals(2L, actualReservation.getTickets(), "Reservation tickets should match");
-        reservationRepository.delete(reservation);
+        reservationRepository.delete(actualReservation);
     }
 
 

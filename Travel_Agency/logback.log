@@ -1,0 +1,1313 @@
+19:35:21.667 [main] DEBUG o.g.i.r.i.inet.TcpOutgoingConnector - Attempting to connect to [357bde55-8786-4b7b-af7d-ae812a9d94fc port:46025, addresses:[/127.0.0.1]].
+19:35:21.669 [main] DEBUG o.g.i.r.i.inet.TcpOutgoingConnector - Trying to connect to address /127.0.0.1.
+19:35:21.672 [main] DEBUG o.g.i.r.i.inet.TcpOutgoingConnector - Connected to address /127.0.0.1:46025.
+19:35:21.683 [main] DEBUG o.g.p.i.w.c.ActionExecutionWorker - Starting Gradle Test Executor 1.
+19:35:21.685 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 1 started executing tests.
+19:35:21.714 [Test worker] DEBUG o.g.a.i.t.t.j.AbstractJUnitTestClassProcessor - Executing test class Test_Repo_Account.Tests
+19:35:21.715 [Test worker] DEBUG o.g.a.i.t.t.j.AbstractJUnitTestClassProcessor - Executing test class Test_Repo_Clients.Tests
+19:35:21.715 [Test worker] DEBUG o.g.a.i.t.t.j.AbstractJUnitTestClassProcessor - Executing test class Test_Repo_Reservation.Tests
+19:35:21.715 [Test worker] DEBUG o.g.a.i.t.t.j.AbstractJUnitTestClassProcessor - Executing test class Test_Repo_Trip.Tests
+19:35:21.813 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:35:21.814 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:21.814 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:21.814 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:21.985 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:35:21.987 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:35:21.988 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:21.988 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:21.988 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.009 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:35:22.018 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:35:22.018 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.018 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.019 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.034 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:35:22.035 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:35:22.035 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.036 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.036 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.052 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account found: Entity{id={2, password123}}
+19:35:22.053 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:35:22.053 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.053 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.053 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.066 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:35:22.069 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:35:22.069 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.069 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.069 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.089 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:35:22.090 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:35:22.091 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.091 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.091 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.105 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:35:22.106 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:35:22.106 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.106 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.106 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.120 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - No account found with client ID: 2
+19:35:22.123 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:35:22.123 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.123 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.124 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.141 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:35:22.141 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Updating account: Entity{id={2, password123}}
+19:35:22.141 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.141 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.141 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.153 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account updated successfully: Entity{id={2, password123}}
+19:35:22.154 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:35:22.154 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.154 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.154 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.166 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:35:22.170 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:35:22.170 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.170 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.170 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.184 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=195}
+19:35:22.185 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.185 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.185 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.199 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=195}
+19:35:22.201 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:35:22.201 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.201 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.201 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.213 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=196}
+19:35:22.214 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.214 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.214 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.226 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client found: Entity{id=196}
+19:35:22.227 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.227 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.227 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.239 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=196}
+19:35:22.241 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:35:22.241 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.242 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.242 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.255 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=197}
+19:35:22.256 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.256 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.256 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.267 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=197}
+19:35:22.268 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.268 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.268 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.280 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:35:22.280 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.280 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.280 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.291 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=198}
+19:35:22.291 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.292 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.294 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.305 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client updated successfully: Entity{id=198}
+19:35:22.306 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.306 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.306 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.316 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=198}
+19:35:22.321 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:35:22.321 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.321 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.321 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.335 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 94
+19:35:22.335 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Updating reservation: Entity{id=94}
+19:35:22.335 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.335 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.335 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.345 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation updated successfully: Entity{id=94}
+19:35:22.346 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=94}
+19:35:22.346 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.346 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.346 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.356 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=94}
+19:35:22.358 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:35:22.358 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.358 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.358 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.369 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 95
+19:35:22.369 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 95
+19:35:22.370 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.370 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.370 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.384 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation found: Entity{id=null}
+19:35:22.384 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=95}
+19:35:22.384 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.384 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.385 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.397 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=95}
+19:35:22.399 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:35:22.400 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.400 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.400 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.413 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 96
+19:35:22.414 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=96}
+19:35:22.414 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.414 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.414 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.426 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=96}
+19:35:22.427 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 96
+19:35:22.427 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.427 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.427 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.439 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - No reservation found with ID: 96
+19:35:22.441 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:35:22.441 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.441 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.442 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.453 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 97
+19:35:22.454 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=97}
+19:35:22.454 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.454 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.454 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.466 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 98
+19:35:22.467 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=98}
+19:35:22.467 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.467 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.467 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.480 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=98}
+19:35:22.484 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:35:22.484 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.484 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.484 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.498 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 110
+19:35:22.499 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=110}
+19:35:22.499 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.499 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.499 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.511 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=110}
+19:35:22.512 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:35:22.512 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.513 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.513 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.527 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 111
+19:35:22.528 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 111
+19:35:22.528 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.528 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.528 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.540 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip found: Entity{id=111}
+19:35:22.541 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=111}
+19:35:22.541 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.541 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.541 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.555 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=111}
+19:35:22.557 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:35:22.558 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.558 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.558 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.569 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 112
+19:35:22.569 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=112}
+19:35:22.570 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.570 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.570 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.579 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=112}
+19:35:22.579 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 112
+19:35:22.579 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.579 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.579 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.588 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - No trip found with ID: 112
+19:35:22.590 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:35:22.590 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.590 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.590 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.603 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 113
+19:35:22.603 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Updating trip: Entity{id=113}
+19:35:22.603 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.603 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.603 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.613 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip updated successfully: Entity{id=113}
+19:35:22.614 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=113}
+19:35:22.614 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:35:22.614 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:35:22.614 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:35:22.624 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=113}
+19:35:22.627 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 1 finished executing tests.
+19:35:22.627 [Test worker] DEBUG o.g.p.i.w.c.ActionExecutionWorker - Completed Gradle Test Executor 1.
+19:36:21.315 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 2 started executing tests.
+19:36:21.442 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:36:21.443 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.443 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.443 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.650 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:36:21.653 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:36:21.653 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.654 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.654 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.675 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:36:21.681 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:36:21.681 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.681 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.682 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.700 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:36:21.701 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:36:21.701 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.701 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.701 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.720 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account found: Entity{id={2, password123}}
+19:36:21.721 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:36:21.721 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.722 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.722 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.741 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:36:21.744 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:36:21.745 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.745 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.745 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.764 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:36:21.764 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:36:21.765 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.765 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.765 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.780 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:36:21.781 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:36:21.781 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.781 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.781 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.793 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - No account found with client ID: 2
+19:36:21.795 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:36:21.796 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.796 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.796 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.811 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:36:21.812 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Updating account: Entity{id={2, password123}}
+19:36:21.812 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.812 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.812 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.827 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account updated successfully: Entity{id={2, password123}}
+19:36:21.827 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:36:21.827 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.828 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.828 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.840 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:36:21.845 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:36:21.846 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.846 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.846 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.863 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=199}
+19:36:21.864 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.864 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.864 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.876 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=199}
+19:36:21.879 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:36:21.880 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.880 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.880 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.895 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=200}
+19:36:21.896 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.896 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.896 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.913 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client found: Entity{id=200}
+19:36:21.913 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.913 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.914 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.928 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=200}
+19:36:21.929 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:36:21.930 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.930 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.930 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.944 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=201}
+19:36:21.944 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.944 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.945 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.958 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=201}
+19:36:21.959 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.959 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.959 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.971 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:36:21.971 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.971 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.971 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.984 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=202}
+19:36:21.985 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.985 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.985 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:21.996 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client updated successfully: Entity{id=202}
+19:36:21.996 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:21.996 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:21.996 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.010 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=202}
+19:36:22.018 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:36:22.018 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.018 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.018 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.032 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 99
+19:36:22.033 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Updating reservation: Entity{id=99}
+19:36:22.033 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.033 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.033 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.044 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation updated successfully: Entity{id=99}
+19:36:22.044 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=99}
+19:36:22.045 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.045 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.045 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.058 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=99}
+19:36:22.060 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:36:22.060 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.060 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.060 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.071 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 100
+19:36:22.072 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 100
+19:36:22.072 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.072 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.072 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.083 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation found: Entity{id=null}
+19:36:22.084 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=100}
+19:36:22.084 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.084 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.084 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.094 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=100}
+19:36:22.096 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:36:22.096 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.096 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.096 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.111 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 101
+19:36:22.112 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=101}
+19:36:22.112 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.112 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.112 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.122 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=101}
+19:36:22.123 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 101
+19:36:22.123 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.123 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.123 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.132 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - No reservation found with ID: 101
+19:36:22.134 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:36:22.134 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.134 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.134 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.146 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 102
+19:36:22.146 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=102}
+19:36:22.147 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.147 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.147 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.158 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 103
+19:36:22.158 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=103}
+19:36:22.158 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.158 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.158 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.169 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=103}
+19:36:22.175 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:36:22.175 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.175 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.175 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.187 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 114
+19:36:22.188 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=114}
+19:36:22.189 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.189 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.189 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.205 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=114}
+19:36:22.208 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:36:22.209 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.209 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.209 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.224 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 115
+19:36:22.225 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 115
+19:36:22.225 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.225 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.225 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.240 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip found: Entity{id=115}
+19:36:22.240 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=115}
+19:36:22.241 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.241 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.241 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.254 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=115}
+19:36:22.256 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:36:22.257 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.257 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.257 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.269 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 116
+19:36:22.269 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=116}
+19:36:22.269 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.269 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.269 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.280 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=116}
+19:36:22.280 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 116
+19:36:22.280 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.280 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.280 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.291 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - No trip found with ID: 116
+19:36:22.292 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:36:22.293 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.293 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.293 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.307 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 117
+19:36:22.308 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Updating trip: Entity{id=117}
+19:36:22.308 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.308 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.308 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.322 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip updated successfully: Entity{id=117}
+19:36:22.323 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=117}
+19:36:22.323 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:36:22.323 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:36:22.323 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:36:22.333 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=117}
+19:36:22.339 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 2 finished executing tests.
+19:37:51.748 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 3 started executing tests.
+19:37:51.874 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:37:51.875 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:51.875 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:51.875 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.042 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:37:52.045 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:37:52.045 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.045 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.045 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.067 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:37:52.073 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:37:52.074 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.074 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.074 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.088 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:37:52.089 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:37:52.089 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.090 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.090 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.107 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account found: Entity{id={2, password123}}
+19:37:52.108 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:37:52.109 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.109 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.109 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.128 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:37:52.129 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:37:52.129 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.130 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.130 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.145 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:37:52.146 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:37:52.146 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.146 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.146 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.163 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:37:52.164 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:37:52.164 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.165 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.165 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.181 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - No account found with client ID: 2
+19:37:52.183 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:37:52.184 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.184 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.184 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.202 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:37:52.202 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Updating account: Entity{id={2, password123}}
+19:37:52.202 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.203 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.203 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.216 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account updated successfully: Entity{id={2, password123}}
+19:37:52.217 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:37:52.217 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.217 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.217 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.232 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:37:52.235 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:37:52.235 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.235 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.235 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.246 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=203}
+19:37:52.247 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.247 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.247 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.259 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=203}
+19:37:52.261 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:37:52.261 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.261 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.261 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.272 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=204}
+19:37:52.272 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.272 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.272 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.283 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client found: Entity{id=204}
+19:37:52.284 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.284 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.284 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.300 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=204}
+19:37:52.302 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:37:52.302 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.302 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.302 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.312 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=205}
+19:37:52.312 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.313 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.313 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.323 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=205}
+19:37:52.324 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.324 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.324 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.337 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:37:52.337 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.337 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.337 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.351 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=206}
+19:37:52.352 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.352 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.352 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.363 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client updated successfully: Entity{id=206}
+19:37:52.364 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.364 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.364 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.374 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=206}
+19:37:52.378 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:37:52.378 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.378 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.378 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.391 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 104
+19:37:52.391 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Updating reservation: Entity{id=104}
+19:37:52.391 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.391 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.392 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.401 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation updated successfully: Entity{id=104}
+19:37:52.402 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=104}
+19:37:52.402 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.402 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.402 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.413 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=104}
+19:37:52.414 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:37:52.414 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.414 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.414 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.425 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 105
+19:37:52.425 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 105
+19:37:52.426 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.426 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.426 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.437 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation found: Entity{id=null}
+19:37:52.437 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=105}
+19:37:52.438 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.438 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.438 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.448 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=105}
+19:37:52.449 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:37:52.450 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.450 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.450 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.461 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 106
+19:37:52.462 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=106}
+19:37:52.462 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.462 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.462 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.473 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=106}
+19:37:52.473 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 106
+19:37:52.473 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.473 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.473 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.484 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - No reservation found with ID: 106
+19:37:52.485 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:37:52.486 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.486 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.486 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.498 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 107
+19:37:52.498 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=107}
+19:37:52.499 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.499 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.499 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.509 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 108
+19:37:52.510 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=108}
+19:37:52.510 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.510 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.510 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.522 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=108}
+19:37:52.526 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:37:52.526 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.526 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.526 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.540 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 118
+19:37:52.541 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=118}
+19:37:52.541 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.541 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.541 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.553 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=118}
+19:37:52.555 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:37:52.555 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.556 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.556 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.568 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 119
+19:37:52.569 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 119
+19:37:52.569 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.569 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.569 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.581 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip found: Entity{id=119}
+19:37:52.581 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=119}
+19:37:52.581 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.581 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.581 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.591 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=119}
+19:37:52.593 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:37:52.594 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.594 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.594 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.604 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 120
+19:37:52.604 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=120}
+19:37:52.604 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.604 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.604 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.615 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=120}
+19:37:52.615 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 120
+19:37:52.615 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.615 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.615 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.624 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - No trip found with ID: 120
+19:37:52.626 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:37:52.626 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.626 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.626 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.635 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 121
+19:37:52.635 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Updating trip: Entity{id=121}
+19:37:52.636 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.636 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.636 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.646 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip updated successfully: Entity{id=121}
+19:37:52.646 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=121}
+19:37:52.646 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:52.646 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:52.647 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:52.658 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=121}
+19:37:52.661 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 3 finished executing tests.
+19:37:56.167 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 4 started executing tests.
+19:37:56.295 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:37:56.295 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.296 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.296 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.464 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:37:56.467 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:37:56.468 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.468 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.468 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.497 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:37:56.508 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:37:56.509 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.509 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.509 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.534 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:37:56.535 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:37:56.536 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.536 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.536 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.562 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account found: Entity{id={2, password123}}
+19:37:56.563 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:37:56.563 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.563 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.563 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.580 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:37:56.583 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:37:56.584 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.584 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.584 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.606 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:37:56.607 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:37:56.607 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.608 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.608 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.625 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:37:56.626 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:37:56.626 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.626 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.626 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.645 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - No account found with client ID: 2
+19:37:56.649 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:37:56.649 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.649 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.649 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.666 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:37:56.666 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Updating account: Entity{id={2, password123}}
+19:37:56.667 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.667 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.667 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.683 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account updated successfully: Entity{id={2, password123}}
+19:37:56.683 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:37:56.683 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.683 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.684 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.698 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:37:56.704 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:37:56.704 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.705 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.705 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.719 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=207}
+19:37:56.719 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.720 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.720 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.734 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=207}
+19:37:56.736 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:37:56.737 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.737 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.737 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.749 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=208}
+19:37:56.750 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.750 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.750 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.762 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client found: Entity{id=208}
+19:37:56.763 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.763 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.763 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.777 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=208}
+19:37:56.779 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:37:56.779 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.780 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.780 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.796 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=209}
+19:37:56.796 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.797 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.797 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.809 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=209}
+19:37:56.810 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.811 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.811 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.822 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:37:56.823 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.823 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.823 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.835 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=210}
+19:37:56.836 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.836 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.836 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.847 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client updated successfully: Entity{id=210}
+19:37:56.847 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.847 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.847 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.857 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=210}
+19:37:56.861 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:37:56.862 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.862 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.862 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.873 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 109
+19:37:56.874 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Updating reservation: Entity{id=109}
+19:37:56.874 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.874 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.874 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.884 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation updated successfully: Entity{id=109}
+19:37:56.884 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=109}
+19:37:56.884 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.884 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.884 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.897 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=109}
+19:37:56.901 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:37:56.901 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.901 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.901 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.913 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 110
+19:37:56.913 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 110
+19:37:56.914 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.914 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.914 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.926 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation found: Entity{id=null}
+19:37:56.927 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=110}
+19:37:56.927 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.927 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.927 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.937 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=110}
+19:37:56.939 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:37:56.939 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.939 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.940 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.952 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 111
+19:37:56.953 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=111}
+19:37:56.953 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.953 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.953 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.963 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=111}
+19:37:56.964 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 111
+19:37:56.964 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.964 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.964 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.974 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - No reservation found with ID: 111
+19:37:56.975 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:37:56.976 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.976 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.976 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:56.987 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 112
+19:37:56.987 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=112}
+19:37:56.987 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:56.987 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:56.987 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.001 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 113
+19:37:57.001 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=113}
+19:37:57.002 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.002 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.002 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.019 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=113}
+19:37:57.026 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:37:57.026 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.026 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.026 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.044 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 122
+19:37:57.045 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=122}
+19:37:57.045 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.045 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.046 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.059 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=122}
+19:37:57.061 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:37:57.062 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.062 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.062 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.080 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 123
+19:37:57.081 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 123
+19:37:57.081 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.081 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.081 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.094 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip found: Entity{id=123}
+19:37:57.095 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=123}
+19:37:57.095 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.095 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.095 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.108 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=123}
+19:37:57.110 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:37:57.111 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.111 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.111 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.124 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 124
+19:37:57.124 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=124}
+19:37:57.124 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.124 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.124 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.138 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=124}
+19:37:57.139 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 124
+19:37:57.139 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.139 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.139 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.152 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - No trip found with ID: 124
+19:37:57.155 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:37:57.155 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.155 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.155 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.169 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 125
+19:37:57.169 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Updating trip: Entity{id=125}
+19:37:57.169 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.169 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.169 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.181 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip updated successfully: Entity{id=125}
+19:37:57.182 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=125}
+19:37:57.182 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:37:57.182 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:37:57.182 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:37:57.195 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=125}
+19:37:57.200 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 4 finished executing tests.
+19:45:45.689 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 5 started executing tests.
+19:45:45.821 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:45:45.822 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:45.822 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:45.822 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.009 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:45:46.012 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:45:46.012 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.012 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.012 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.036 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:45:46.046 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:45:46.046 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.046 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.046 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.062 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:45:46.063 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:45:46.063 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.063 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.063 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.080 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account found: Entity{id={2, password123}}
+19:45:46.081 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:45:46.081 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.081 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.081 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.097 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:45:46.099 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:45:46.100 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.100 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.100 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.117 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:45:46.118 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:45:46.118 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.118 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.119 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.130 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:45:46.131 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:45:46.131 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.131 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.131 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.147 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - No account found with client ID: 2
+19:45:46.149 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:45:46.149 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.150 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.150 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.171 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:45:46.171 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Updating account: Entity{id={2, password123}}
+19:45:46.172 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.172 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.172 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.185 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account updated successfully: Entity{id={2, password123}}
+19:45:46.186 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:45:46.186 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.186 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.186 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.198 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:45:46.202 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:45:46.202 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.202 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.202 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.213 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=211}
+19:45:46.213 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.214 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.214 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.225 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=211}
+19:45:46.226 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:45:46.227 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.227 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.227 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.238 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=212}
+19:45:46.239 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.239 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.239 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.251 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client found: Entity{id=212}
+19:45:46.251 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.251 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.251 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.264 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=212}
+19:45:46.266 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:45:46.266 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.266 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.266 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.276 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=213}
+19:45:46.277 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.277 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.277 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.288 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=213}
+19:45:46.288 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.288 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.289 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.300 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:45:46.300 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.300 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.300 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.310 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=214}
+19:45:46.311 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.311 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.311 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.321 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client updated successfully: Entity{id=214}
+19:45:46.321 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.321 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.321 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.331 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=214}
+19:45:46.334 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:45:46.334 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.334 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.334 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.346 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 114
+19:45:46.347 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Updating reservation: Entity{id=114}
+19:45:46.347 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.347 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.347 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.357 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation updated successfully: Entity{id=114}
+19:45:46.358 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=114}
+19:45:46.358 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.358 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.358 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.369 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=114}
+19:45:46.370 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:45:46.370 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.370 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.370 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.380 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 115
+19:45:46.380 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 115
+19:45:46.380 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.381 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.381 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.391 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation found: Entity{id=null}
+19:45:46.391 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=115}
+19:45:46.391 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.392 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.392 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.402 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=115}
+19:45:46.403 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:45:46.404 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.404 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.404 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.419 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 116
+19:45:46.419 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=116}
+19:45:46.420 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.420 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.420 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.429 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=116}
+19:45:46.430 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 116
+19:45:46.430 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.430 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.430 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.441 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - No reservation found with ID: 116
+19:45:46.443 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:45:46.443 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.443 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.443 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.456 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 117
+19:45:46.456 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=117}
+19:45:46.456 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.456 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.456 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.468 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=117}
+19:45:46.473 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:45:46.473 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.473 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.473 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.488 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 126
+19:45:46.488 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=126}
+19:45:46.489 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.489 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.489 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.501 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=126}
+19:45:46.502 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:45:46.502 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.502 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.502 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.515 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 127
+19:45:46.517 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 127
+19:45:46.517 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.517 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.517 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.531 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip found: Entity{id=127}
+19:45:46.531 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=127}
+19:45:46.532 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.532 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.532 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.546 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=127}
+19:45:46.548 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:45:46.548 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.548 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.548 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.558 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 128
+19:45:46.558 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=128}
+19:45:46.558 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.559 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.559 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.569 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=128}
+19:45:46.570 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 128
+19:45:46.570 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.570 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.570 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.579 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - No trip found with ID: 128
+19:45:46.581 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:45:46.581 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.581 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.581 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.591 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 129
+19:45:46.591 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Updating trip: Entity{id=129}
+19:45:46.591 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.592 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.592 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.602 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip updated successfully: Entity{id=129}
+19:45:46.603 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=129}
+19:45:46.603 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:46.603 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:46.603 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:46.612 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=129}
+19:45:46.617 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 5 finished executing tests.
+19:45:51.456 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 6 started executing tests.
+19:45:51.593 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:45:51.594 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.594 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.594 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.785 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:45:51.788 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:45:51.788 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.788 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.788 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.811 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:45:51.817 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:45:51.818 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.818 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.818 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.836 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:45:51.837 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:45:51.837 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.837 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.837 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.862 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account found: Entity{id={2, password123}}
+19:45:51.864 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:45:51.864 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.864 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.864 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.885 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:45:51.887 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:45:51.888 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.888 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.888 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.909 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:45:51.909 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:45:51.910 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.910 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.910 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.927 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:45:51.927 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Finding account with client ID: 2
+19:45:51.928 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.928 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.928 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.944 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - No account found with client ID: 2
+19:45:51.947 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding new account: Entity{id={2, password123}}
+19:45:51.948 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.948 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.948 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.961 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account added successfully with client ID: 2
+19:45:51.962 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Updating account: Entity{id={2, password123}}
+19:45:51.962 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.962 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.962 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.975 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account updated successfully: Entity{id={2, password123}}
+19:45:51.976 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Deleting account: Entity{id={2, password123}}
+19:45:51.976 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:51.976 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:51.976 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:51.991 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Account deleted successfully: Entity{id={2, password123}}
+19:45:51.999 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:45:51.999 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.000 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.000 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.015 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=215}
+19:45:52.015 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.015 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.016 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.028 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=215}
+19:45:52.030 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:45:52.030 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.030 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.030 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.043 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=216}
+19:45:52.044 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.044 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.044 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.059 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client found: Entity{id=216}
+19:45:52.060 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.060 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.060 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.076 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=216}
+19:45:52.079 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:45:52.079 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.079 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.079 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.093 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=217}
+19:45:52.093 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.093 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.093 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.106 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=217}
+19:45:52.107 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.107 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.107 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.121 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Adding a new client: Entity{id=null}
+19:45:52.122 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.122 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.122 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.134 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - New client added successfully: Entity{id=218}
+19:45:52.135 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.135 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.135 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.147 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client updated successfully: Entity{id=218}
+19:45:52.148 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.148 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.148 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.159 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Client - Client deleted successfully: Entity{id=218}
+19:45:52.171 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:45:52.171 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.171 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.171 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.183 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 118
+19:45:52.184 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Updating reservation: Entity{id=118}
+19:45:52.184 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.184 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.184 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.197 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation updated successfully: Entity{id=118}
+19:45:52.198 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=118}
+19:45:52.198 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.198 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.198 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.209 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=118}
+19:45:52.211 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:45:52.211 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.211 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.212 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.224 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 119
+19:45:52.225 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 119
+19:45:52.225 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.225 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.225 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.237 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation found: Entity{id=null}
+19:45:52.238 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=119}
+19:45:52.238 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.238 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.238 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.249 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=119}
+19:45:52.251 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:45:52.251 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.251 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.251 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.266 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 120
+19:45:52.266 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=120}
+19:45:52.266 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.267 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.267 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.277 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=120}
+19:45:52.277 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Finding reservation with ID: 120
+19:45:52.277 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.277 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.277 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.287 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - No reservation found with ID: 120
+19:45:52.289 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+19:45:52.289 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.289 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.289 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.301 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 121
+19:45:52.302 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Deleting reservation: Entity{id=121}
+19:45:52.302 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.302 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.302 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.315 [Test worker] INFO  o.p.t.R.D.Repo_Reservation - Reservation deleted successfully: Entity{id=121}
+19:45:52.320 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:45:52.320 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.320 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.320 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.332 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 130
+19:45:52.332 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=130}
+19:45:52.332 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.332 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.332 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.343 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=130}
+19:45:52.345 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:45:52.346 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.346 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.346 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.361 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 131
+19:45:52.362 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 131
+19:45:52.363 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.363 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.363 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.380 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip found: Entity{id=131}
+19:45:52.381 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=131}
+19:45:52.381 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.381 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.381 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.392 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=131}
+19:45:52.393 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:45:52.394 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.394 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.394 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.407 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 132
+19:45:52.407 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=132}
+19:45:52.407 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.407 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.407 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.422 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=132}
+19:45:52.423 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Finding trip with ID: 132
+19:45:52.423 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.423 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.423 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.433 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - No trip found with ID: 132
+19:45:52.435 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Adding new trip: Entity{id=null}
+19:45:52.435 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.435 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.435 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.447 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip added successfully with ID: 133
+19:45:52.447 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Updating trip: Entity{id=133}
+19:45:52.447 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.447 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.447 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.459 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip updated successfully: Entity{id=133}
+19:45:52.459 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Deleting trip: Entity{id=133}
+19:45:52.459 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/test
+19:45:52.459 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+19:45:52.459 [Test worker] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+19:45:52.470 [Test worker] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip deleted successfully: Entity{id=133}
+19:45:52.475 [Test worker] INFO  o.g.a.i.t.testing.worker.TestWorker - Gradle Test Executor 6 finished executing tests.
