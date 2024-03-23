@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 public class Tests {
-    static private final DB_Utils DB_connection = new DB_Utils();
+    static private final DB_Utils DB_connection = new DB_Utils("test_bd.config");
     static private final Repo_Trip repoTrip = new Repo_Trip(DB_connection);
 
 

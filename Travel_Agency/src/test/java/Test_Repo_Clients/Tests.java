@@ -11,7 +11,7 @@ import java.util.Optional;
 
 public class Tests {
 
-    static private final DB_Utils DB_connection = new DB_Utils();
+    static private final DB_Utils DB_connection = new DB_Utils("test_bd.config");
 
     static private final Repo_Client clientRepository = new Repo_Client(DB_connection);
 
@@ -35,7 +35,8 @@ public class Tests {
     @DisplayName("Delete client test")
     public void testDelete() {
         Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client=clientRepository.add(client).isPresent()?clientRepository.add(client).get():null;
+
+        client= clientRepository.add(client).orElse(null);
 
         assert client != null;
         Optional<Client> deletedClient = clientRepository.delete(client);
@@ -51,8 +52,7 @@ public class Tests {
     @DisplayName("Update client test")
     public void testUpdate() {
         Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        clientRepository.add(client);
-        client=clientRepository.add(client).isPresent()?clientRepository.add(client).get():null;
+        client= clientRepository.add(client).orElse(null);
 
         assert client != null;
         client.setName("Updated Name");
@@ -72,8 +72,7 @@ public class Tests {
     @DisplayName("Find client test")
     public void testFind() {
         Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        clientRepository.add(client);
-        client=clientRepository.add(client).isPresent()?clientRepository.add(client).get():null;
+        client= clientRepository.add(client).orElse(null);
 
         assert client != null;
         Optional<Client> foundClient = clientRepository.find(client.getId());

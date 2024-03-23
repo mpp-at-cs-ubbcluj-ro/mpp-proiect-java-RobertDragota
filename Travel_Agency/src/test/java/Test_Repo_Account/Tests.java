@@ -16,7 +16,7 @@ import java.util.Properties;
 public class Tests {
 
 
-    static private final DB_Utils DB_connection = new DB_Utils();
+    static private final DB_Utils DB_connection = new DB_Utils("test_bd.config");
     static private final Repo_Account repoAccount = new Repo_Account(DB_connection);
 
     @Test
@@ -36,7 +36,7 @@ public class Tests {
         Assertions.assertEquals("dragotarobert10@gmail.com", actualAccount.getClient().getEmail(), "Client email in account should match");
         Assertions.assertEquals("password123", actualAccount.getPassword(), "Account password should match");
 
-        repoAccount.delete(actualAccount);
+        repoAccount.delete(account);
     }
 
     @Test
@@ -76,7 +76,7 @@ public class Tests {
         Account actualAccount = updatedAccount.get();
         Assertions.assertEquals("updatedPassword123", actualAccount.getPassword(), "Account password should be updated");
 
-        repoAccount.delete(actualAccount);
+        repoAccount.delete(account);
     }
 
     @Test
@@ -98,7 +98,7 @@ public class Tests {
         //Assertions.assertEquals("dragotarobert10@gmail.com", actualAccount.getClient().getEmail(), "Found client email in account should match");
         //Assertions.assertEquals("password123", actualAccount.getPassword(), "Found account password should match");
 
-        repoAccount.delete(actualAccount);
+        repoAccount.delete(account);
     }
 
 }

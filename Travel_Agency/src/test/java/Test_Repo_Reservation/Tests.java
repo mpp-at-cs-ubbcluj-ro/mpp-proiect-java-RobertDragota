@@ -13,16 +13,16 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 public class Tests {
-    static private final DB_Utils DB_connection = new DB_Utils();
+    static private final DB_Utils DB_connection = new DB_Utils("test_bd.config");
     static private final Repo_Reservation reservationRepository = new Repo_Reservation(DB_connection);
 
     @Test
     @DisplayName("Add reservation test")
     public void testAddReservation() {
         Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(1L);
+        client.setId(2L);
         Trip trip = new Trip("Paris", "TravelCo", 500L, 20L, LocalDateTime.now(), LocalDateTime.now().plusHours(2), LocalDateTime.now().plusHours(12));
-        trip.setId(1L);
+        trip.setId(2L);
         Reservation reservation = new Reservation(client, "1234567890", 2L, trip);
         reservation = reservationRepository.add(reservation).orElse(null);
 
@@ -46,9 +46,9 @@ public class Tests {
     @DisplayName("Delete reservation test")
     public void testDeleteReservation() {
         Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(1L);
+        client.setId(2L);
         Trip trip = new Trip("Paris", "TravelCo", 500L, 20L, LocalDateTime.now(), LocalDateTime.now().plusHours(2), LocalDateTime.now().plusHours(12));
-        trip.setId(1L);
+        trip.setId(2L);
         Reservation reservation = new Reservation(client, "1234567890", 2L, trip);
         reservation = reservationRepository.add(reservation).orElse(null);
 
@@ -71,9 +71,9 @@ public class Tests {
     public void testUpdateReservation() {
         // Predefined or mocked Client and Trip
         Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(1L);
+        client.setId(2L);
         Trip trip = new Trip("Paris", "TravelCo", 500L, 20L, LocalDateTime.now(), LocalDateTime.now().plusHours(2), LocalDateTime.now().plusHours(12));
-        trip.setId(1L);
+        trip.setId(2L);
         Reservation reservation = new Reservation(client, "1234567890", 2L, trip);
         reservation = reservationRepository.add(reservation).orElse(null);
 
@@ -100,9 +100,9 @@ public class Tests {
     @DisplayName("Find reservation test")
     public void testFindReservation() {
         Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(1L);
+        client.setId(2L);
         Trip trip = new Trip("Paris", "TravelCo", 500L, 20L, LocalDateTime.now(), LocalDateTime.now().plusHours(2), LocalDateTime.now().plusHours(12));
-        trip.setId(1L);
+        trip.setId(2L);
         Reservation reservation = new Reservation(client, "1234567890", 2L, trip);
         reservation = reservationRepository.add(reservation).orElse(null);
 
