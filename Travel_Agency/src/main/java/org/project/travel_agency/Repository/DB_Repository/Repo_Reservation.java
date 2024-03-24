@@ -1,6 +1,6 @@
 package org.project.travel_agency.Repository.DB_Repository;
 
-import org.project.travel_agency.Domain.Client;
+import org.project.travel_agency.Domain.Account;
 import org.project.travel_agency.Domain.Reservation;
 import org.project.travel_agency.Domain.Trip;
 import org.project.travel_agency.Utility.DB_Utils;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class Repo_Reservation implements Repo_Reservation_Inreface<Long, Reservation> {
+public class Repo_Reservation implements Repo_Reservation_Inreface {
     private final DB_Utils DB_connection;
     private static final Logger logger = LoggerFactory.getLogger(Repo_Reservation.class);
 
@@ -24,14 +24,15 @@ public class Repo_Reservation implements Repo_Reservation_Inreface<Long, Reserva
     @Override
     public Optional<Reservation> add(Reservation reservation) {
         logger.info("Adding new reservation: {}", reservation);
-        String SQL_INSERT = "INSERT INTO reservations (client_id, phone_number, tickets, trip_id) VALUES (?, ?, ?, ?) ";
+        String SQL_INSERT = "INSERT INTO reservations (account_id,client_name, phone_number, tickets, trip_id) VALUES (?, ?,?, ?, ?) ";
         try (Connection conn = DB_connection.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS)) {
 
-            pstmt.setLong(1, reservation.getClient().getId());
-            pstmt.setString(2, reservation.getPhoneNumber());
-            pstmt.setLong(3, reservation.getTickets());
-            pstmt.setLong(4, reservation.getTrip().getId());
+            pstmt.setLong(1, reservation.getAccount().getId());
+            pstmt.setString(2, reservation.getClientName());
+            pstmt.setString(3, reservation.getPhoneNumber());
+            pstmt.setLong(4, reservation.getTickets());
+            pstmt.setLong(5, reservation.getTrip().getId());
             int affectedRows = pstmt.executeUpdate();
 
             if (affectedRows > 0) {
@@ -53,16 +54,17 @@ public class Repo_Reservation implements Repo_Reservation_Inreface<Long, Reserva
     @Override
     public Optional<Reservation> update(Reservation reservation) {
         logger.info("Updating reservation: {}", reservation);
-        String SQL_UPDATE = "UPDATE reservations SET client_id = ?, phone_number = ?, tickets = ?, trip_id = ? WHERE id = ?;";
+        String SQL_UPDATE = "UPDATE reservations SET account_id = ?, client_name=?,phone_number = ?, tickets = ?, trip_id = ? WHERE id = ?;";
 
         try (Connection conn = DB_connection.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(SQL_UPDATE)) {
 
-            pstmt.setLong(1, reservation.getClient().getId());
-            pstmt.setString(2, reservation.getPhoneNumber());
-            pstmt.setLong(3, reservation.getTickets());
-            pstmt.setLong(4, reservation.getTrip().getId());
-            pstmt.setLong(5, reservation.getId());
+            pstmt.setLong(1, reservation.getAccount().getId());
+            pstmt.setString(2, reservation.getClientName());
+            pstmt.setString(3, reservation.getPhoneNumber());
+            pstmt.setLong(4, reservation.getTickets());
+            pstmt.setLong(5, reservation.getTrip().getId());
+            pstmt.setLong(6, reservation.getId());
 
             int affectedRows = pstmt.executeUpdate();
 
@@ -104,10 +106,10 @@ public class Repo_Reservation implements Repo_Reservation_Inreface<Long, Reserva
     public Optional<Reservation> find(Long id) {
         logger.info("Finding reservation with ID: {}", id);
         String SQL_FIND = """
-                    SELECT r.*, c.id AS client_id, c.name AS client_name, c.email,
+                    SELECT r.*, a.id AS account_id, a.name AS account_name,a.password,
                            t.id AS trip_id, t.destination, t.transport_company, t.price, t.available_seats, t.date, t.start_hour, t.finish_hour
                     FROM reservations r
-                    INNER JOIN clients c ON r.client_id = c.id
+                    INNER JOIN account a ON r.account_id = a.id
                     INNER JOIN trips t ON r.trip_id = t.id
                     WHERE r.id = ?;
                 """;
@@ -119,7 +121,8 @@ public class Repo_Reservation implements Repo_Reservation_Inreface<Long, Reserva
             ResultSet rs = pstmt.executeQuery();
 
             if (rs.next()) {
-                Client client = new Client(rs.getString("client_name"), rs.getString("email"));
+                Account account = new Account(rs.getString("account_name"), rs.getString("password"));
+                account.setId(rs.getLong("account_id"));
                 Trip trip = new Trip(
                         rs.getString("destination"), rs.getString("transport_company"), rs.getLong("price"),
                         rs.getLong("available_seats"), rs.getTimestamp("date").toLocalDateTime(),
@@ -127,7 +130,7 @@ public class Repo_Reservation implements Repo_Reservation_Inreface<Long, Reserva
                 );
 
                 Reservation reservation = new Reservation(
-                        client, rs.getString("phone_number"), rs.getLong("tickets"), trip
+                        account, rs.getString("client_name"),rs.getString("phone_number"), rs.getLong("tickets"), trip
                 );
                 logger.info("Reservation found: {}", reservation);
                 return Optional.of(reservation);
@@ -146,10 +149,10 @@ public class Repo_Reservation implements Repo_Reservation_Inreface<Long, Reserva
         logger.info("Retrieving all reservations");
         List<Reservation> reservations = new ArrayList<>();
         String SQL_GET_ALL = """
-                    SELECT r.*, c.id AS client_id, c.name AS client_name, c.email,
+                    SELECT r.*, a.id AS account_id, a.name AS account_name,a.password,
                            t.id AS trip_id, t.destination, t.transport_company, t.price, t.available_seats, t.date, t.start_hour, t.finish_hour
                     FROM reservations r
-                    INNER JOIN clients c ON r.client_id = c.id
+                    INNER JOIN account a ON r.account_id = a.id
                     INNER JOIN trips t ON r.trip_id = t.id;
                 """;
 
@@ -158,7 +161,7 @@ public class Repo_Reservation implements Repo_Reservation_Inreface<Long, Reserva
              ResultSet rs = pstmt.executeQuery()) {
 
             while (rs.next()) {
-                Client client = new Client(rs.getString("client_name"), rs.getString("email"));
+                Account account = new Account(rs.getString("account_name"), rs.getString("password"));
                 Trip trip = new Trip(
                         rs.getString("destination"), rs.getString("transport_company"), rs.getLong("price"),
                         rs.getLong("available_seats"), rs.getTimestamp("date").toLocalDateTime(),
@@ -166,7 +169,7 @@ public class Repo_Reservation implements Repo_Reservation_Inreface<Long, Reserva
                 );
 
                 Reservation reservation = new Reservation(
-                        client, rs.getString("phone_number"), rs.getLong("tickets"), trip
+                        account,rs.getString("client_name"), rs.getString("phone_number"), rs.getLong("tickets"), trip
                 );
                 reservations.add(reservation);
             }

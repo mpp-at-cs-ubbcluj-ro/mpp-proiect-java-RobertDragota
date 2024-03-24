@@ -6,6 +6,7 @@ import org.project.travel_agency.Domain.Tuple;
 
 import java.util.Optional;
 
-public interface Repo_Account_Interface extends RepoInterface<Tuple<Long, String>, Account>{
+public interface Repo_Account_Interface extends RepoInterface<Long, Account>{
+    Optional<Account> findByUsername(String username);
 
 }

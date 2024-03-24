@@ -3,7 +3,8 @@ package Test_Repo_Reservation;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.project.travel_agency.Domain.Client;
+import org.project.travel_agency.Domain.Account;
+
 import org.project.travel_agency.Domain.Reservation;
 import org.project.travel_agency.Domain.Trip;
 import org.project.travel_agency.Repository.DB_Repository.Repo_Reservation;
@@ -19,11 +20,11 @@ public class Tests {
     @Test
     @DisplayName("Add reservation test")
     public void testAddReservation() {
-        Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(2L);
+        Account account = new Account("Robert", "password123");
+        account.setId(1L);
         Trip trip = new Trip("Paris", "TravelCo", 500L, 20L, LocalDateTime.now(), LocalDateTime.now().plusHours(2), LocalDateTime.now().plusHours(12));
-        trip.setId(2L);
-        Reservation reservation = new Reservation(client, "1234567890", 2L, trip);
+        trip.setId(1L);
+        Reservation reservation = new Reservation(account, "Robert","1234567890", 2L, trip);
         Optional<Reservation> reservation1 = reservationRepository.add(reservation);
 
         // Assertions
@@ -39,11 +40,11 @@ public class Tests {
     @Test
     @DisplayName("Delete reservation test")
     public void testDeleteReservation() {
-        Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(2L);
+        Account account = new Account("Robert", "password123");
+        account.setId(1L);
         Trip trip = new Trip("Paris", "TravelCo", 500L, 20L, LocalDateTime.now(), LocalDateTime.now().plusHours(2), LocalDateTime.now().plusHours(12));
-        trip.setId(2L);
-        Reservation reservation = new Reservation(client, "1234567890", 2L, trip);
+        trip.setId(1L);
+        Reservation reservation = new Reservation(account, "Robert","1234567890", 2L, trip);
         reservation = reservationRepository.add(reservation).orElse(null);
 
         assert reservation != null;
@@ -64,11 +65,11 @@ public class Tests {
     @DisplayName("Update reservation test")
     public void testUpdateReservation() {
         // Predefined or mocked Client and Trip
-        Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(2L);
+        Account account = new Account("Robert", "password123");
+        account.setId(1L);
         Trip trip = new Trip("Paris", "TravelCo", 500L, 20L, LocalDateTime.now(), LocalDateTime.now().plusHours(2), LocalDateTime.now().plusHours(12));
-        trip.setId(2L);
-        Reservation reservation = new Reservation(client, "1234567890", 2L, trip);
+        trip.setId(1L);
+        Reservation reservation = new Reservation(account, "Robert","1234567890", 2L, trip);
         reservation = reservationRepository.add(reservation).orElse(null);
 
         assert reservation != null;
@@ -93,11 +94,11 @@ public class Tests {
     @Test
     @DisplayName("Find reservation test")
     public void testFindReservation() {
-        Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(2L);
+        Account account = new Account("Robert", "password123");
+        account.setId(1L);
         Trip trip = new Trip("Paris", "TravelCo", 500L, 20L, LocalDateTime.now(), LocalDateTime.now().plusHours(2), LocalDateTime.now().plusHours(12));
-        trip.setId(2L);
-        Reservation reservation = new Reservation(client, "1234567890", 2L, trip);
+        trip.setId(1L);
+        Reservation reservation = new Reservation(account, "Robert","1234567890", 2L, trip);
         reservation = reservationRepository.add(reservation).orElse(null);
 
         assert reservation != null;

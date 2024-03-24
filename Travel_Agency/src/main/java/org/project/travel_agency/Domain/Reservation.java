@@ -1,20 +1,22 @@
 package org.project.travel_agency.Domain;
 
 public class Reservation extends Entity<Long> {
-    private Client client;
+    private Account account;
+    private String clientName;
     private String phoneNumber;
     private Long tickets;
     private Trip trip;
 
-    public Reservation(Client client, String phoneNumber, Long tickets, Trip trip) {
-        this.client = client;
+    public Reservation(Account account, String clientName, String phoneNumber, Long tickets, Trip trip) {
+        this.account = account;
+        this.clientName = clientName;
         this.phoneNumber = phoneNumber;
         this.tickets = tickets;
         this.trip = trip;
     }
 
-    public Client getClient() {
-        return client;
+    public Account getAccount() {
+        return account;
     }
 
     public String getPhoneNumber() {
@@ -29,8 +31,8 @@ public class Reservation extends Entity<Long> {
         return trip;
     }
 
-    public void setClient(Client client) {
-        this.client = client;
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     public void setPhoneNumber(String phoneNumber) {
@@ -43,5 +45,13 @@ public class Reservation extends Entity<Long> {
 
     public void setTrip(Trip trip) {
         this.trip = trip;
+    }
+
+    public String getClientName() {
+        return clientName;
+    }
+
+    public void setClientName(String clientName) {
+        this.clientName = clientName;
     }
 }

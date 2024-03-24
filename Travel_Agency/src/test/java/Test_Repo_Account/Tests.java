@@ -4,14 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.project.travel_agency.Domain.Account;
-import org.project.travel_agency.Domain.Client;
 import org.project.travel_agency.Repository.DB_Repository.Repo_Account;
 import org.project.travel_agency.Utility.DB_Utils;
 
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Optional;
-import java.util.Properties;
 
 public class Tests {
 
@@ -22,9 +18,8 @@ public class Tests {
     @Test
     @DisplayName("Add account test")
     public void testAdd() {
-        Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(2L);
-        Account account = new Account(client, "password123");
+
+        Account account = new Account("Robert", "password123");
 
         Optional<Account> addedAccount = repoAccount.add(account);
 
@@ -32,8 +27,8 @@ public class Tests {
 
         Account actualAccount = addedAccount.get();
 
-        Assertions.assertEquals("Robert", actualAccount.getClient().getName(), "Client name in account should match");
-        Assertions.assertEquals("dragotarobert10@gmail.com", actualAccount.getClient().getEmail(), "Client email in account should match");
+        Assertions.assertEquals("Robert", actualAccount.getName(), "Client name in account should match");
+
         Assertions.assertEquals("password123", actualAccount.getPassword(), "Account password should match");
 
         repoAccount.delete(account);
@@ -42,9 +37,8 @@ public class Tests {
     @Test
     @DisplayName("Delete account test")
     public void testDelete() {
-        Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(2L);
-        Account account = new Account(client, "password123");
+
+        Account account = new Account("Robert", "password123");
         account = repoAccount.add(account).orElse(null);
 
         Assertions.assertNotNull(account, "Added account should not be null");
@@ -60,9 +54,8 @@ public class Tests {
     @Test
     @DisplayName("Update account test")
     public void testUpdate() {
-        Client client = new Client("adawd", "dvfre");
-        client.setId(2L);
-        Account account = new Account(client, "password123");
+
+        Account account = new Account("Robert", "password123");
         account = repoAccount.add(account).orElse(null);
 
         Assertions.assertNotNull(account, "Added account should not be null");
@@ -82,9 +75,8 @@ public class Tests {
     @Test
     @DisplayName("Find account test")
     public void testFind() {
-        Client client = new Client("Robert", "dragotarobert10@gmail.com");
-        client.setId(2L);
-        Account account = new Account(client, "password123");
+
+        Account account = new Account("Robert", "password123");
         account = repoAccount.add(account).orElse(null);
 
         Assertions.assertNotNull(account, "Added account should not be null");
@@ -94,10 +86,8 @@ public class Tests {
         Assertions.assertTrue(foundAccount.isPresent(), "Account should be found");
 
         Account actualAccount = foundAccount.get();
-        //Assertions.assertEquals("Robert", actualAccount.getClient().getName(), "Found client name in account should match");
-        //Assertions.assertEquals("dragotarobert10@gmail.com", actualAccount.getClient().getEmail(), "Found client email in account should match");
-        //Assertions.assertEquals("password123", actualAccount.getPassword(), "Found account password should match");
-
+        Assertions.assertEquals("Robert", actualAccount.getName(), "Found client name in account should match");
+        Assertions.assertEquals("password123", actualAccount.getPassword(), "Found account password should match");
         repoAccount.delete(account);
     }
 

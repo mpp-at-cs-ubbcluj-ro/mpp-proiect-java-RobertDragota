@@ -5,7 +5,10 @@ plugins {
     id 'org.openjfx.javafxplugin' version '0.0.13'
     id 'org.beryx.jlink' version '2.25.0'
 }
-
+application {
+    mainModule = 'org.project.travel_agency'
+    mainClass = "org.project.travel_agency.Application.Login"
+}
 group 'org.project'
 version '1.0-SNAPSHOT'
 

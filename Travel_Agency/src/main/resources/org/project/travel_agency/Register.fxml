@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="401.0" prefWidth="668.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="org.project.travel_agency.Controllers.Register_Controller">
+   <children>
+      <ImageView fitHeight="408.0" fitWidth="408.0" layoutX="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="register_button" layoutX="84.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleRegister" stylesheets="@register_style.css" text="Register" />
+      <TextField fx:id="UserPassword" layoutX="54.0" layoutY="165.0" promptText="password" styleClass="rounded-textfield" stylesheets="@register_style.css" />
+      <TextField fx:id="UserName" layoutX="54.0" layoutY="101.0" promptText="username" styleClass="rounded-textfield" stylesheets="@register_style.css" />
+   </children>
+</AnchorPane>

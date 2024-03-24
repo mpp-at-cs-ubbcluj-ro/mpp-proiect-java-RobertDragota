@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class Repo_Trip implements Repo_Trip_Intreface<Long, Trip> {
+public class Repo_Trip implements Repo_Trip_Intreface {
     private final DB_Utils DB_connection;
     private static final Logger logger = LoggerFactory.getLogger(Repo_Trip.class);
 
@@ -161,4 +161,82 @@ public class Repo_Trip implements Repo_Trip_Intreface<Long, Trip> {
         }
         return trips;
     }
+
+    /**
+     * @param destination
+     * @return
+     */
+    @Override
+    public Optional<Trip> findByDestination(String destination) {
+        logger.info("Finding trip with destination: {}", destination);
+        String SQL_FIND = "SELECT * FROM trips WHERE destination = ?;";
+        try (Connection conn = DB_connection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(SQL_FIND)) {
+
+            pstmt.setString(1, destination);
+            ResultSet rs = pstmt.executeQuery();
+
+            if (rs.next()) {
+                Trip trip = new Trip(
+                        rs.getString("destination"),
+                        rs.getString("transport_company"),
+                        rs.getLong("price"),
+                        rs.getLong("available_seats"),
+                        rs.getTimestamp("date").toLocalDateTime(),
+                        rs.getTimestamp("start_hour").toLocalDateTime(),
+                        rs.getTimestamp("finish_hour").toLocalDateTime()
+                );
+                trip.setId(rs.getLong("id"));
+                logger.info("Trip found: {}", trip);
+                return Optional.of(trip);
+            } else {
+                logger.info("No trip found with destination: {}", destination);
+            }
+        } catch (SQLException e) {
+            logger.error("Error finding trip with destination: {}", destination, e);
+        }
+        return Optional.empty();
+    }
+
+    /**
+     * @param destination
+     * @param startHour
+     * @param finishHour
+     * @return
+     */
+    @Override
+    public Iterable<Trip> filterTrips(String destination, int startHour, int finishHour) {
+        logger.info("Filtering trips with destination: {}, startHour: {}, finishHour: {}", destination, startHour, finishHour);
+        List<Trip> trips = new ArrayList<>();
+
+        // SQL query modified to compare only the hour part
+        String SQL_FILTER = "SELECT * FROM trips WHERE destination = ? AND EXTRACT(HOUR FROM start_hour) >= ? AND EXTRACT(HOUR FROM finish_hour) <= ?;";
+        try (Connection conn = DB_connection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(SQL_FILTER)) {
+
+            pstmt.setString(1, destination);
+            pstmt.setInt(2, startHour);
+            pstmt.setInt(3, finishHour);
+            ResultSet rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                Trip trip = new Trip(
+                        rs.getString("destination"),
+                        rs.getString("transport_company"),
+                        rs.getLong("price"),
+                        rs.getLong("available_seats"),
+                        rs.getTimestamp("date").toLocalDateTime(),
+                        rs.getTimestamp("start_hour").toLocalDateTime(),
+                        rs.getTimestamp("finish_hour").toLocalDateTime()
+                );
+                trip.setId(rs.getLong("id"));
+                trips.add(trip);
+            }
+            logger.info("Retrieved {} trips", trips.size());
+        } catch (SQLException e) {
+            logger.error("Error filtering trips with destination: {}, startHour: {}, finishHour: {}", destination, startHour, finishHour, e);
+        }
+        return trips;
+    }
 }
+

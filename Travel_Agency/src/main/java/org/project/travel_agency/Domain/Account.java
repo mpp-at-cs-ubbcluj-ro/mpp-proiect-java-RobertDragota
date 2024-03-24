@@ -1,25 +1,25 @@
 package org.project.travel_agency.Domain;
 
-public class Account extends Entity<Tuple<Long,String>>{
-    private  Client  client;
-    private  String password;
+public class Account extends Entity<Long> {
+    private String name;
+    private String password;
 
-    public Account(Client client, String password) {
-        this.client= client;
+    public Account(String name, String password) {
+        this.name = name;
         this.password = password;
-        super.setId(new Tuple<>(client.getId(),password));
+
     }
 
-    public Client getClient() {
-        return client;
+    public String getName() {
+        return name;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public void setClient(Client client) {
-        this.client = client;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setPassword(String password) {
