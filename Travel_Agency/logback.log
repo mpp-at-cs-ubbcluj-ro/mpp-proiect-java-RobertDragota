@@ -53,3 +53,28 @@
 00:07:22.187 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
 00:07:22.187 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
 00:07:22.200 [JavaFX Application Thread] INFO  o.p.t.R.DB_Repository.Repo_Trip - Retrieved 6 trips
+10:49:40.743 [JavaFX Application Thread] INFO  o.p.t.R.DB_Repository.Repo_Account - Finding account with username: Robert
+10:49:40.752 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:49:40.752 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+10:49:40.752 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+10:49:41.116 [JavaFX Application Thread] INFO  o.p.t.R.DB_Repository.Repo_Account - Account found: Entity{id=1}
+10:49:41.139 [JavaFX Application Thread] INFO  o.p.t.R.DB_Repository.Repo_Trip - Retrieving all trips
+10:49:41.139 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:49:41.139 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+10:49:41.139 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+10:49:41.162 [JavaFX Application Thread] INFO  o.p.t.R.DB_Repository.Repo_Trip - Retrieved 6 trips
+10:50:07.837 [JavaFX Application Thread] INFO  o.p.t.R.D.Repo_Reservation - Adding new reservation: Entity{id=null}
+10:50:07.837 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:50:07.838 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+10:50:07.838 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+10:50:07.871 [JavaFX Application Thread] INFO  o.p.t.R.D.Repo_Reservation - Reservation added successfully with ID: 6
+10:50:07.872 [JavaFX Application Thread] INFO  o.p.t.R.DB_Repository.Repo_Trip - Updating trip: Entity{id=2}
+10:50:07.872 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:50:07.872 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+10:50:07.872 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+10:50:07.892 [JavaFX Application Thread] INFO  o.p.t.R.DB_Repository.Repo_Trip - Trip updated successfully: Entity{id=2}
+10:50:07.894 [JavaFX Application Thread] INFO  o.p.t.R.DB_Repository.Repo_Trip - Retrieving all trips
+10:50:07.894 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:50:07.894 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - user: robert12
+10:50:07.894 [JavaFX Application Thread] INFO  o.p.travel_agency.Utility.DB_Utils - pass: Asmodeus011235
+10:50:07.911 [JavaFX Application Thread] INFO  o.p.t.R.DB_Repository.Repo_Trip - Retrieved 6 trips

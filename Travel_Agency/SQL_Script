@@ -1,32 +1,12 @@
 create table account
 (
-    client_id bigint not null
-        primary key
-        references clients
-            on delete cascade,
-    password  varchar(255),
-    unique (client_id, password)
-);
-create table clients
-(
-    id    serial
+    id       serial
         primary key,
-    name  varchar(255),
-    email varchar(255)
+    name     varchar(255)
+        unique,
+    password varchar(255)
 );
 
-create table reservations
-(
-    id           serial
-        primary key,
-    client_id    bigint
-        references clients
-            on delete cascade,
-    phone_number varchar(255) not null,
-    tickets      bigint       not null,
-    trip_id      bigint
-        references trips
-);
 
 create table trips
 (
@@ -40,3 +20,19 @@ create table trips
     start_hour        timestamp    not null,
     finish_hour       timestamp    not null
 );
+
+
+create table reservations
+(
+    id           serial
+        primary key,
+    account_id   bigint
+        references account
+            on delete cascade,
+    client_name  varchar(255) not null,
+    phone_number varchar(255) not null,
+    tickets      bigint       not null,
+    trip_id      bigint
+        references trips
+);
+
