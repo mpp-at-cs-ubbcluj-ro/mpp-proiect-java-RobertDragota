@@ -1,0 +1,8 @@
+rootProject.name = 'Travel_Agency'
+include 'AppPersistance'
+include 'AppDomain'
+include 'AppServer'
+include 'AppNetworking'
+include 'AppServices'
+include 'ClientFX'
+

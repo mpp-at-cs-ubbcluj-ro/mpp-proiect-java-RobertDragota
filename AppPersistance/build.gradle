@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.mpp2024'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.6.0'
+    implementation project (':AppDomain')
+}
+
+test {
+    useJUnitPlatform()
+}

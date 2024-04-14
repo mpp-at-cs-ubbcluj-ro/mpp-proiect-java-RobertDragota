@@ -1,0 +1,389 @@
+10:33:36.561 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+10:33:36.564 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:33:36.564 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:33:36.565 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:33:36.752 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+10:33:37.760 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+10:33:37.761 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:33:37.762 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:33:37.762 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:33:37.803 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+10:46:47.403 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+10:46:47.405 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:46:47.405 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:46:47.405 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:46:47.582 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+10:46:48.587 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+10:46:48.587 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:46:48.588 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:46:48.588 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:46:48.614 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+10:46:56.704 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with ID: 2
+10:46:56.705 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:46:56.705 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:46:56.705 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:46:56.733 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=null}
+10:50:12.094 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+10:50:12.096 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:50:12.096 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:50:12.096 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:50:12.330 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+10:50:52.557 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+10:50:52.566 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:50:52.566 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:50:52.566 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:50:52.764 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+10:50:53.769 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+10:50:53.770 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:50:53.770 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:50:53.770 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:50:53.807 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+10:51:21.020 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with ID: 2
+10:51:21.021 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:51:21.021 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:51:21.021 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:51:21.074 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=null}
+10:53:36.837 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+10:53:36.839 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:53:36.839 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:53:36.839 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:53:37.019 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+10:53:38.025 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+10:53:38.025 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:53:38.025 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:53:38.025 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:53:38.059 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+10:53:40.734 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with ID: 2
+10:53:40.734 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+10:53:40.734 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+10:53:40.734 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+10:53:40.758 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=null}
+14:31:01.288 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+14:31:01.290 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:31:01.290 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:31:01.290 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:31:01.496 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+14:31:02.500 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:31:02.501 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:31:02.501 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:31:02.501 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:31:02.537 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:31:03.542 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:31:03.542 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:31:03.542 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:31:03.542 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:31:03.557 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:31:46.968 [Thread-1] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:31:46.968 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:31:46.968 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:31:46.968 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:31:46.993 [Thread-1] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:31:47.994 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:31:47.995 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:31:47.995 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:31:47.995 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:31:48.023 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:31:49.026 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:31:49.026 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:31:49.026 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:31:49.026 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:31:49.048 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:38:03.712 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+14:38:03.713 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:38:03.714 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:38:03.714 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:38:03.902 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+14:38:04.909 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:38:04.910 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:38:04.911 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:38:04.911 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:38:04.942 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:38:05.948 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:38:05.949 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:38:05.949 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:38:05.949 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:38:05.977 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:43:41.870 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+14:43:41.875 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:43:41.875 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:43:41.875 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:43:42.258 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+14:43:43.265 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:43:43.266 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:43:43.266 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:43:43.266 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:43:43.305 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:43:44.315 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:43:44.316 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:43:44.316 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:43:44.316 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:43:44.342 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:46:56.302 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+14:46:56.303 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:46:56.303 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:46:56.303 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:46:56.470 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+14:46:57.475 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:46:57.476 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:46:57.476 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:46:57.476 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:46:57.505 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:46:58.511 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:46:58.512 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:46:58.512 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:46:58.513 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:46:58.530 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:47:06.019 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Miami, startHour: 7, finishHour: 12
+14:47:06.019 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:47:06.019 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:47:06.019 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:47:06.048 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 0 trips
+14:50:59.241 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+14:50:59.242 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:50:59.242 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:50:59.242 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:50:59.409 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+14:51:00.414 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:51:00.414 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:51:00.415 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:51:00.415 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:51:00.441 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:51:01.446 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:51:01.447 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:51:01.447 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:51:01.448 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:51:01.472 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:51:12.777 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 17, finishHour: 20
+14:51:12.778 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:51:12.778 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:51:12.778 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:51:12.795 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 1 trips
+14:53:26.825 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+14:53:26.826 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:53:26.826 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:53:26.826 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:53:26.993 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+14:53:27.998 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:53:27.999 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:53:27.999 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:53:27.999 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:53:28.028 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:53:29.037 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:53:29.038 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:53:29.039 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:53:29.039 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:53:29.064 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:54:04.967 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 17, finishHour: 20
+14:54:04.967 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:54:04.967 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:54:04.967 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:54:04.981 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 1 trips
+14:55:10.689 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+14:55:10.693 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:55:10.693 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:55:10.694 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:55:11.123 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+14:55:12.131 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:55:12.132 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:55:12.132 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:55:12.133 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:55:12.167 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:55:13.181 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:55:13.182 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:55:13.183 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:55:13.183 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:55:13.209 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:55:32.552 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 17, finishHour: 20
+14:55:32.553 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:55:32.554 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:55:32.555 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:55:33.450 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 1 trips
+15:05:15.668 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:05:15.671 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:05:15.672 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:05:15.672 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:05:16.039 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:05:17.045 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:05:17.046 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:05:17.046 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:05:17.046 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:05:17.093 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:05:18.105 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:05:18.106 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:05:18.107 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:05:18.107 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:05:18.124 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:06:27.095 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 17, finishHour: 20
+15:06:27.096 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:06:27.097 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:06:27.099 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:06:28.007 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 1 trips
+15:09:30.188 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:09:30.189 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:09:30.189 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:09:30.189 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:09:30.380 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:09:31.386 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:09:31.386 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:09:31.386 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:09:31.387 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:09:31.421 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:09:32.427 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:09:32.427 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:09:32.427 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:09:32.428 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:09:32.450 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:09:42.883 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 17, finishHour: 20
+15:09:42.884 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:09:42.884 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:09:42.884 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:09:42.900 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 1 trips
+15:13:58.022 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:13:58.023 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:13:58.023 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:13:58.023 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:13:58.186 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:13:59.191 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:13:59.191 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:13:59.192 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:13:59.192 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:13:59.235 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:14:00.240 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:14:00.240 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:14:00.240 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:14:00.241 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:14:00.266 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:14:13.630 [Thread-1] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+15:14:13.630 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:14:13.630 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:14:13.630 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:14:13.648 [Thread-1] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+15:14:14.649 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:14:14.650 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:14:14.650 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:14:14.650 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:14:14.675 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:14:15.677 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:14:15.678 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:14:15.678 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:14:15.678 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:14:15.703 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:15:34.728 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:15:34.729 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:15:34.729 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:15:34.729 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:15:34.895 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:15:35.901 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:15:35.901 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:15:35.901 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:15:35.902 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:15:35.931 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:15:36.937 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:15:36.937 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:15:36.938 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:15:36.938 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:15:36.960 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:15:55.359 [Thread-1] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+15:15:55.359 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:15:55.359 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:15:55.359 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:15:55.376 [Thread-1] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+15:15:56.378 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:15:56.379 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:15:56.379 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:15:56.380 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:15:56.415 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:15:57.417 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:15:57.418 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:15:57.418 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:15:57.418 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:15:57.438 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:16:29.577 [Thread-1] INFO  org.mpp2024.Repo_Reservation - Adding new reservation: Entity{id=null}
+15:16:29.577 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:16:29.577 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:16:29.577 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:16:29.589 [Thread-1] INFO  org.mpp2024.Repo_Trip - Updating trip: Entity{id=3}
+15:16:29.589 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:16:29.589 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:16:29.589 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:16:29.609 [Thread-1] INFO  org.mpp2024.Repo_Trip - Trip updated successfully: Entity{id=3}
+15:16:29.610 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:16:29.611 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:16:29.611 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:16:29.611 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:16:29.622 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:38:52.514 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:38:52.517 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:38:52.517 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:38:52.517 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:38:52.770 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:38:53.775 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:38:53.776 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:38:53.776 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:38:53.776 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:38:53.820 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:39:08.338 [Thread-1] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+15:39:08.338 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:39:08.338 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:39:08.339 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:39:08.365 [Thread-1] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+15:39:09.366 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:39:09.367 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:39:09.367 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:39:09.367 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:39:09.403 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:39:21.996 [Thread-1] INFO  org.mpp2024.Repo_Reservation - Adding new reservation: Entity{id=null}
+15:39:21.996 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:39:21.996 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:39:21.996 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:39:22.025 [Thread-1] INFO  org.mpp2024.Repo_Reservation - Reservation added successfully with ID: 7
+15:39:22.026 [Thread-1] INFO  org.mpp2024.Repo_Trip - Updating trip: Entity{id=3}
+15:39:22.026 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:39:22.026 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:39:22.026 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:39:22.040 [Thread-1] INFO  org.mpp2024.Repo_Trip - Trip updated successfully: Entity{id=3}
+15:39:22.041 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:39:22.041 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:39:22.041 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:39:22.041 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:39:22.057 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:44:39.965 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:44:39.967 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:44:39.967 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:44:39.967 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:44:40.207 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:44:41.126 [Thread-1] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+15:44:41.126 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:44:41.126 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:44:41.126 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:44:41.158 [Thread-1] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+15:44:41.212 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:44:41.213 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:44:41.213 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:44:41.213 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:44:41.232 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:44:42.160 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:44:42.160 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:44:42.160 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:44:42.161 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:44:42.190 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:45:03.683 [Thread-1] INFO  org.mpp2024.Repo_Reservation - Adding new reservation: Entity{id=null}
+15:45:03.684 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:45:03.684 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:45:03.684 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:45:03.704 [Thread-1] INFO  org.mpp2024.Repo_Reservation - Reservation added successfully with ID: 8
+15:45:03.705 [Thread-1] INFO  org.mpp2024.Repo_Trip - Updating trip: Entity{id=3}
+15:45:03.705 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:45:03.705 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:45:03.705 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:45:03.720 [Thread-1] INFO  org.mpp2024.Repo_Trip - Trip updated successfully: Entity{id=3}
+15:45:03.721 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:45:03.721 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:45:03.721 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:45:03.721 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:45:03.735 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+15:45:21.114 [Thread-1] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 17, finishHour: 20
+15:45:21.114 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:45:21.114 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:45:21.114 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:45:21.133 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 1 trips

@@ -1,0 +1,40 @@
+14:41:25.819 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+14:41:25.820 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:41:25.820 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:41:25.821 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:41:25.988 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:25:54.675 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:25:54.679 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:25:54.679 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:25:54.679 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:25:54.896 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:27:46.699 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:27:46.701 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:27:46.701 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:27:46.702 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:27:46.898 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:29:42.891 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:29:42.893 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:29:42.894 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:29:42.894 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:29:43.085 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:34:04.272 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:34:04.274 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:34:04.275 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:34:04.275 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:34:04.532 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:35:22.802 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:35:22.805 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:35:22.805 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:35:22.805 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:35:22.980 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:38:35.814 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:38:35.820 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:38:35.821 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:38:35.821 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:38:37.180 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}
+15:40:23.958 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert12
+15:40:23.959 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:40:23.959 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:40:23.959 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:40:24.126 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=2}

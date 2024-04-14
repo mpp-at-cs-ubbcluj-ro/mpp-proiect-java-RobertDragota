@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="355.0" prefWidth="382.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="org.mpp2024.Controllers.Reservation_Controller">
+   <children>
+      <TextField fx:id="ClientName" layoutX="163.0" layoutY="44.0" styleClass="rounded-textfield" stylesheets="@reservation_style.css" />
+      <TextField fx:id="ClientPhone" layoutX="163.0" layoutY="97.0" styleClass="rounded-textfield" stylesheets="@reservation_style.css" />
+      <TextField fx:id="NoTickets" layoutX="163.0" layoutY="148.0" styleClass="rounded-textfield" stylesheets="@reservation_style.css" />
+      <Label layoutX="51.0" layoutY="44.0" text="Name:" textFill="#b1d728">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="97.0" prefHeight="38.0" prefWidth="97.0" text="Phone:" textFill="#b1d728">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="148.0" prefHeight="38.0" prefWidth="97.0" text="Tickets:" textFill="#b1d728">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="booking_button" layoutX="134.0" layoutY="244.0" mnemonicParsing="false" onAction="#handleBooking" prefHeight="41.0" prefWidth="115.0" stylesheets="@reservation_style.css" text="Book" />
+   </children>
+</AnchorPane>

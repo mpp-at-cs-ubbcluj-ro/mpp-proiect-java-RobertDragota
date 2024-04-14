@@ -1,0 +1,18 @@
+.button{
+    -fx-background-color: #b1d728;
+    -fx-text-fill: #000000;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+    -fx-padding: 10 20 10 20;
+}
+.rounded-textfield {
+    -fx-background-color: #ecf0f1; /* Culoarea fundalului */
+    -fx-background-radius: 8px;;
+    -fx-padding: 8px; /* Spatiu în jurul textului */
+    -fx-border-radius: 8px; /* Radius pentru colțuri rotunjite */
+    -fx-border-width: 2px;
+    -fx-border-color: #7b807c;
+}
