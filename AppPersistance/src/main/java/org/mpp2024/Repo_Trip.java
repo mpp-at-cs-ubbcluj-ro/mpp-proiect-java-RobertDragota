@@ -5,6 +5,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -20,7 +22,7 @@ public class Repo_Trip implements Repo_Trip_Intreface {
     @Override
     public Optional<Trip> add(Trip trip) {
         logger.info("Adding new trip: {}", trip);
-        String SQL_INSERT = "INSERT INTO trips (destination, transport_company, price, available_seats, date, start_hour, finish_hour) VALUES (?, ?, ?, ?, ?, ?, ?) ";
+        String SQL_INSERT = "INSERT INTO trips (destination, transport_company, price, available_seats, trip_date, start_hour, finish_hour) VALUES (?, ?, ?, ?, ?, ?, ?) ";
         try (Connection conn = DB_connection.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS)) {
 
@@ -53,7 +55,7 @@ public class Repo_Trip implements Repo_Trip_Intreface {
     @Override
     public Optional<Trip> update(Trip trip) {
         logger.info("Updating trip: {}", trip);
-        String SQL_UPDATE = "UPDATE trips SET destination = ?, transport_company = ?, price = ?, available_seats = ?, date = ?, start_hour = ?, finish_hour = ? WHERE id = ?;";
+        String SQL_UPDATE = "UPDATE trips SET destination = ?, transport_company = ?, price = ?, available_seats = ?, trip_date = ?, start_hour = ?, finish_hour = ? WHERE id = ?;";
         try (Connection conn = DB_connection.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(SQL_UPDATE)) {
 
@@ -147,7 +149,7 @@ public class Repo_Trip implements Repo_Trip_Intreface {
                         rs.getString("transport_company"),
                         rs.getLong("price"),
                         rs.getLong("available_seats"),
-                        rs.getTimestamp("date").toLocalDateTime(),
+                        rs.getTimestamp("trip_date").toLocalDateTime(),
                         rs.getTimestamp("start_hour").toLocalDateTime(),
                         rs.getTimestamp("finish_hour").toLocalDateTime()
                 );
@@ -204,18 +206,20 @@ public class Repo_Trip implements Repo_Trip_Intreface {
      * @return
      */
     @Override
-    public Iterable<Trip> filterTrips(String destination, int startHour, int finishHour) {
+    public Iterable<Trip> filterTrips(String destination,LocalDateTime date, LocalDateTime startHour, LocalDateTime finishHour) {
         logger.info("Filtering trips with destination: {}, startHour: {}, finishHour: {}", destination, startHour, finishHour);
         List<Trip> trips = new ArrayList<>();
 
         // SQL query modified to compare only the hour part
-        String SQL_FILTER = "SELECT * FROM trips WHERE destination = ? AND EXTRACT(HOUR FROM start_hour) >= ? AND EXTRACT(HOUR FROM finish_hour) <= ?;";
+        String SQL_FILTER = "SELECT * FROM trips WHERE destination = ? AND  trip_date = ? AND start_hour >= ? AND finish_hour <= ?;";
+
         try (Connection conn = DB_connection.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(SQL_FILTER)) {
 
             pstmt.setString(1, destination);
-            pstmt.setInt(2, startHour);
-            pstmt.setInt(3, finishHour);
+            pstmt.setTimestamp(2, Timestamp.valueOf(date));
+            pstmt.setTimestamp(3, Timestamp.valueOf(startHour));
+            pstmt.setTimestamp(4, Timestamp.valueOf(finishHour));
             ResultSet rs = pstmt.executeQuery();
 
             while (rs.next()) {
@@ -224,7 +228,7 @@ public class Repo_Trip implements Repo_Trip_Intreface {
                         rs.getString("transport_company"),
                         rs.getLong("price"),
                         rs.getLong("available_seats"),
-                        rs.getTimestamp("date").toLocalDateTime(),
+                        rs.getTimestamp("trip_date").toLocalDateTime(),
                         rs.getTimestamp("start_hour").toLocalDateTime(),
                         rs.getTimestamp("finish_hour").toLocalDateTime()
                 );
@@ -233,6 +237,7 @@ public class Repo_Trip implements Repo_Trip_Intreface {
             }
             logger.info("Retrieved {} trips", trips.size());
         } catch (SQLException e) {
+            e.printStackTrace();
             logger.error("Error filtering trips with destination: {}, startHour: {}, finishHour: {}", destination, startHour, finishHour, e);
         }
         return trips;

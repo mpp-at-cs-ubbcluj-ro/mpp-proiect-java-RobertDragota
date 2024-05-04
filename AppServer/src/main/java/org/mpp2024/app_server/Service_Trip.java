@@ -8,6 +8,7 @@ import org.mpp2024.Trip;
 import org.mpp2024.Utility.Validation.ValidException;
 import org.mpp2024.Utility.Validation.Validator_Trip;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 public class Service_Trip implements ServiceTripInterface {
@@ -98,7 +99,7 @@ public class Service_Trip implements ServiceTripInterface {
      * @return
      */
     @Override
-    public Iterable<Trip> filterTrips(String destination, int startHour, int finishHour) {
-        return repo_trip.filterTrips(destination, startHour, finishHour);
+    public Iterable<Trip> filterTrips(String destination, LocalDateTime date,LocalDateTime startHour, LocalDateTime finishHour) {
+        return repo_trip.filterTrips(destination, date,startHour, finishHour);
     }
 }

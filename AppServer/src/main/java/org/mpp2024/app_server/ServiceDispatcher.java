@@ -3,6 +3,8 @@ package org.mpp2024.app_server;
 import org.mpp2024.*;
 import org.mpp2024.Utility.Validation.ValidException;
 
+import javax.security.auth.callback.LanguageCallback;
+import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
@@ -59,8 +61,8 @@ public class ServiceDispatcher implements ServiceAppInterface {
 
 
     @Override
-    public synchronized Iterable<Trip> Get_All_Trip_By_Destination_From_To(String destination, int startDate, int finishDate) throws AppException {
-        return tripService.filterTrips(destination, startDate, finishDate);
+    public synchronized Iterable<Trip> Get_All_Trip_By_Destination_From_To(String destination, LocalDateTime date, LocalDateTime startDate, LocalDateTime finishDate) throws AppException {
+        return tripService.filterTrips(destination,date, startDate, finishDate);
     }
 
 
@@ -75,7 +77,7 @@ public class ServiceDispatcher implements ServiceAppInterface {
     @Override
     public synchronized void Login(Account account, AppObserverInterface observer) throws AppException {
         Optional<Account> account1 = accountService.findByUsername(account.getName());
-        if (account1.isPresent()) {
+        if (account1.isPresent() && account1.get().getPassword().equals(account.getPassword())) {
             if (loggedUsers.get(account1.get().getId()) != null)
                 throw new AppException("User already logged in.");
             loggedUsers.put(account1.get().getId(), observer);

@@ -387,3 +387,549 @@
 15:45:21.114 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
 15:45:21.114 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
 15:45:21.133 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 1 trips
+13:09:08.121 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+13:09:08.122 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:09:08.122 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:09:08.123 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:09:08.327 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+13:09:09.332 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+13:09:09.332 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:09:09.332 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:09:09.332 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:09:09.361 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+13:10:15.135 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T17:30, finishHour: 2024-03-24T20:00
+13:10:15.136 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:10:15.136 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:10:15.136 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:10:15.173 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error filtering trips with destination: Destination1, startHour: 2024-03-24T17:30, finishHour: 2024-03-24T20:00
+org.postgresql.util.PSQLException: ERROR: operator does not exist: timestamp without time zone == unknown
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 53
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at org.mpp2024.Repo_Trip.filterTrips(Repo_Trip.java:221)
+	at org.mpp2024.app_server.Service_Trip.filterTrips(Service_Trip.java:103)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trip_By_Destination_From_To(ServiceDispatcher.java:65)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP_BY_DESTINATION_FROM_TO(AppUserRpcReflectionWorker.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+13:35:51.408 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+13:35:51.409 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:35:51.409 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:35:51.409 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:35:51.581 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+13:35:52.587 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+13:35:52.588 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:35:52.588 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:35:52.589 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:35:52.613 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+13:37:02.942 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T18:00, finishHour: 2024-03-24T19:30
+13:37:02.943 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:37:02.943 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:37:02.943 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:37:02.968 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error filtering trips with destination: Destination1, startHour: 2024-03-24T18:00, finishHour: 2024-03-24T19:30
+org.postgresql.util.PSQLException: ERROR: operator does not exist: timestamp without time zone == character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 53
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at org.mpp2024.Repo_Trip.filterTrips(Repo_Trip.java:228)
+	at org.mpp2024.app_server.Service_Trip.filterTrips(Service_Trip.java:103)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trip_By_Destination_From_To(ServiceDispatcher.java:65)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP_BY_DESTINATION_FROM_TO(AppUserRpcReflectionWorker.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+13:38:12.594 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+13:38:12.595 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:38:12.595 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:38:12.595 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:38:12.770 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+13:38:13.775 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+13:38:13.775 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:38:13.775 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:38:13.775 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:38:13.815 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+13:39:12.555 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T18:00, finishHour: 2024-03-24T20:00
+13:39:12.555 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:39:12.555 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:39:12.555 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:41:41.288 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+13:41:41.291 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:41:41.291 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:41:41.291 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:41:41.490 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+13:41:42.494 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+13:41:42.495 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:41:42.495 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:41:42.495 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:41:42.538 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+13:43:25.407 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T18:00, finishHour: 2024-03-24T19:30
+13:43:25.408 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:43:25.408 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:43:25.408 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:44:56.071 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+13:44:56.073 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:44:56.073 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:44:56.073 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:44:56.238 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+13:44:57.243 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+13:44:57.243 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:44:57.243 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:44:57.244 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:44:57.284 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+13:47:11.278 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T17:30, finishHour: 2024-03-24T19:30
+13:47:11.278 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:47:11.279 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:47:11.279 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:47:11.317 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error filtering trips with destination: Destination1, startHour: 2024-03-24T17:30, finishHour: 2024-03-24T19:30
+org.postgresql.util.PSQLException: ERROR: operator does not exist: timestamp without time zone = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 53
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at org.mpp2024.Repo_Trip.filterTrips(Repo_Trip.java:228)
+	at org.mpp2024.app_server.Service_Trip.filterTrips(Service_Trip.java:103)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trip_By_Destination_From_To(ServiceDispatcher.java:65)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP_BY_DESTINATION_FROM_TO(AppUserRpcReflectionWorker.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+13:55:46.296 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+13:55:46.297 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:55:46.297 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:55:46.297 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:55:46.479 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+13:55:47.483 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+13:55:47.484 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:55:47.484 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:55:47.484 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:55:47.514 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+13:56:13.357 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T18:00, finishHour: 2024-03-24T20:00
+13:56:13.357 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:56:13.357 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:56:13.357 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+13:56:13.382 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 0 trips
+14:01:48.500 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:01:48.502 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:01:48.502 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:01:48.502 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:01:48.666 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:01:49.671 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:01:49.672 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:01:49.672 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:01:49.672 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:01:49.699 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:02:47.355 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:02:47.356 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:02:47.356 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:02:47.356 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:02:47.528 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:02:48.534 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:02:48.534 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:02:48.534 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:02:48.535 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:02:48.569 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:03:12.074 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T17:00, finishHour: 2024-03-24T20:00
+14:03:12.075 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:03:12.075 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:03:12.075 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:03:12.105 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 0 trips
+14:06:43.257 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:06:43.259 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:06:43.259 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:06:43.259 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:06:43.433 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:06:44.438 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:06:44.439 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:06:44.439 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:06:44.439 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:06:44.471 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:07:03.213 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T17:00, finishHour: 2024-03-24T20:00
+14:07:03.213 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:07:03.213 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:07:03.213 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:07:03.247 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error filtering trips with destination: Destination1, startHour: 2024-03-24T17:00, finishHour: 2024-03-24T20:00
+org.postgresql.util.PSQLException: ERROR: operator does not exist: timestamp without time zone = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 54
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at org.mpp2024.Repo_Trip.filterTrips(Repo_Trip.java:227)
+	at org.mpp2024.app_server.Service_Trip.filterTrips(Service_Trip.java:103)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trip_By_Destination_From_To(ServiceDispatcher.java:65)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP_BY_DESTINATION_FROM_TO(AppUserRpcReflectionWorker.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+14:07:57.143 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:07:57.144 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:07:57.144 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:07:57.144 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:07:57.327 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:07:58.332 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:07:58.332 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:07:58.332 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:07:58.332 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:07:58.353 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:08:33.019 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T17:00, finishHour: 2024-03-24T20:00
+14:08:33.020 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:08:33.020 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:08:33.020 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:08:33.075 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error filtering trips with destination: Destination1, startHour: 2024-03-24T17:00, finishHour: 2024-03-24T20:00
+org.postgresql.util.PSQLException: ERROR: operator does not exist: timestamp without time zone = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 54
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at org.mpp2024.Repo_Trip.filterTrips(Repo_Trip.java:227)
+	at org.mpp2024.app_server.Service_Trip.filterTrips(Service_Trip.java:103)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trip_By_Destination_From_To(ServiceDispatcher.java:65)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP_BY_DESTINATION_FROM_TO(AppUserRpcReflectionWorker.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+14:14:27.361 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:14:27.363 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:14:27.363 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:14:27.363 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:14:27.531 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:14:28.536 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:14:28.537 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:14:28.537 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:14:28.537 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:14:28.578 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 6 trips
+14:14:48.527 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination1, startHour: 2024-03-24T17:00, finishHour: 2024-03-24T20:00
+14:14:48.527 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:14:48.527 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:14:48.527 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:14:48.552 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error filtering trips with destination: Destination1, startHour: 2024-03-24T17:00, finishHour: 2024-03-24T20:00
+org.postgresql.util.PSQLException: ERROR: operator does not exist: numeric = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 73
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at org.mpp2024.Repo_Trip.filterTrips(Repo_Trip.java:228)
+	at org.mpp2024.app_server.Service_Trip.filterTrips(Service_Trip.java:103)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trip_By_Destination_From_To(ServiceDispatcher.java:65)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP_BY_DESTINATION_FROM_TO(AppUserRpcReflectionWorker.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+14:42:31.806 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:42:31.808 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:42:31.808 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:42:31.808 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:42:31.987 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:42:32.992 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:42:32.993 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:42:32.993 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:42:32.993 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:42:33.037 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error retrieving all trips
+org.postgresql.util.PSQLException: The column name date was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:3033)
+	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:2950)
+	at org.mpp2024.Repo_Trip.getAll(Repo_Trip.java:152)
+	at org.mpp2024.app_server.Service_Trip.getAll(Service_Trip.java:83)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trips(ServiceDispatcher.java:59)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP(AppUserRpcReflectionWorker.java:153)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+14:44:30.166 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:44:30.168 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:44:30.168 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:44:30.168 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:44:30.335 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:44:31.341 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:44:31.342 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:44:31.342 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:44:31.342 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:44:31.382 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error retrieving all trips
+org.postgresql.util.PSQLException: The column name date was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:3033)
+	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:2950)
+	at org.mpp2024.Repo_Trip.getAll(Repo_Trip.java:152)
+	at org.mpp2024.app_server.Service_Trip.getAll(Service_Trip.java:83)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trips(ServiceDispatcher.java:59)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP(AppUserRpcReflectionWorker.java:153)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+14:45:39.751 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:45:39.753 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:45:39.753 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:45:39.753 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:45:39.917 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:45:40.922 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:45:40.923 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:45:40.923 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:45:40.923 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:45:40.962 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error retrieving all trips
+org.postgresql.util.PSQLException: The column name date was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:3033)
+	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:2950)
+	at org.mpp2024.Repo_Trip.getAll(Repo_Trip.java:152)
+	at org.mpp2024.app_server.Service_Trip.getAll(Service_Trip.java:83)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trips(ServiceDispatcher.java:59)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP(AppUserRpcReflectionWorker.java:153)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+14:46:39.938 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:46:39.939 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:46:39.939 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:46:39.939 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:46:40.102 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:46:41.108 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:46:41.108 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:46:41.109 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:46:41.109 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:46:41.134 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+14:47:33.165 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination4, startHour: 2024-05-04T13:00, finishHour: 2024-05-04T16:30
+14:47:33.165 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:47:33.165 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:47:33.165 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:47:33.193 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error filtering trips with destination: Destination4, startHour: 2024-05-04T13:00, finishHour: 2024-05-04T16:30
+org.postgresql.util.PSQLException: ERROR: operator does not exist: timestamp without time zone = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at org.mpp2024.Repo_Trip.filterTrips(Repo_Trip.java:228)
+	at org.mpp2024.app_server.Service_Trip.filterTrips(Service_Trip.java:103)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trip_By_Destination_From_To(ServiceDispatcher.java:65)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP_BY_DESTINATION_FROM_TO(AppUserRpcReflectionWorker.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+14:49:30.334 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:49:30.338 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:49:30.338 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:49:30.338 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:49:30.573 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:49:31.578 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:49:31.579 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:49:31.580 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:49:31.580 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:49:31.612 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+14:49:55.862 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination4, startHour: 2024-05-04T13:00, finishHour: 2024-05-04T16:30
+14:49:55.862 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:49:55.862 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:49:55.862 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:52:41.935 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:52:41.937 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:52:41.937 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:52:41.937 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:52:42.117 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:52:43.122 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:52:43.123 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:52:43.123 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:52:43.123 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:52:43.162 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+14:52:56.850 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination4, startHour: 2024-05-04T13:00, finishHour: 2024-05-04T16:30
+14:52:56.851 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:52:56.851 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:52:56.851 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:52:56.881 [Thread-0] ERROR org.mpp2024.Repo_Trip - Error filtering trips with destination: Destination4, startHour: 2024-05-04T13:00, finishHour: 2024-05-04T16:30
+org.postgresql.util.PSQLException: ERROR: operator does not exist: timestamp without time zone = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at org.mpp2024.Repo_Trip.filterTrips(Repo_Trip.java:228)
+	at org.mpp2024.app_server.Service_Trip.filterTrips(Service_Trip.java:103)
+	at org.mpp2024.app_server.ServiceDispatcher.Get_All_Trip_By_Destination_From_To(ServiceDispatcher.java:65)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleGET_ALL_TRIP_BY_DESTINATION_FROM_TO(AppUserRpcReflectionWorker.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.handleRequest(AppUserRpcReflectionWorker.java:72)
+	at org.mpp2024.RcpProtocol.AppUserRpcReflectionWorker.run(AppUserRpcReflectionWorker.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+14:56:17.499 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:56:17.500 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:56:17.500 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:56:17.500 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:56:17.690 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:56:18.695 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:56:18.696 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:56:18.696 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:56:18.696 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:56:18.724 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+14:56:34.511 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination4, startHour: 2024-05-04T13:00, finishHour: 2024-05-04T16:30
+14:56:34.511 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:56:34.511 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:56:34.511 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:57:27.630 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+14:57:27.631 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:57:27.631 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:57:27.631 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:57:27.795 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+14:57:28.800 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+14:57:28.801 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:57:28.802 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:57:28.802 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:57:28.838 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+14:57:48.590 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination4, startHour: 2024-05-04T13:00, finishHour: 2024-05-04T16:30
+14:57:48.590 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:57:48.590 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:57:48.590 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:57:48.609 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 1 trips
+14:58:06.725 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination4, startHour: 2024-05-05T13:00, finishHour: 2024-05-05T16:30
+14:58:06.726 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+14:58:06.726 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+14:58:06.726 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+14:58:06.744 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 0 trips
+15:00:06.041 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+15:00:06.043 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:00:06.043 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:00:06.043 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:00:06.210 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+15:00:07.215 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:00:07.216 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:00:07.216 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:00:07.216 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:00:07.256 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+15:00:25.192 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Destination4, startHour: 2024-05-04T13:00, finishHour: 2024-05-04T16:30
+15:00:25.193 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:00:25.193 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:00:25.193 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:00:25.214 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 1 trips
+15:00:29.509 [Thread-0] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: dewd, startHour: 2024-05-04T13:00, finishHour: 2024-05-04T16:30
+15:00:29.509 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:00:29.509 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:00:29.509 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:00:29.523 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 0 trips
+15:00:30.525 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:00:30.525 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:00:30.526 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:00:30.526 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:00:30.551 [Thread-0] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+15:02:24.910 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+15:02:24.911 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:02:24.911 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:02:24.911 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:02:25.088 [Thread-0] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+15:02:29.239 [Thread-1] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+15:02:29.239 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:02:29.239 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:02:29.239 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:02:29.266 [Thread-1] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+15:02:30.268 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:02:30.269 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:02:30.269 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:02:30.269 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:02:30.299 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+15:02:58.644 [Thread-1] INFO  org.mpp2024.Repo_Trip - Filtering trips with destination: Desfrf, startHour: 2024-05-03T04:00, finishHour: 2024-05-03T05:00
+15:02:58.644 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:02:58.644 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:02:58.644 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:02:58.666 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 0 trips
+15:03:01.835 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:03:01.836 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:03:01.836 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:03:01.836 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:03:01.862 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+15:06:45.412 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: erfedw
+15:06:45.414 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:06:45.414 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:06:45.414 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:06:45.583 [Thread-0] INFO  org.mpp2024.Repo_Account - No account found with  username: erfedw
+15:07:50.012 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: efa
+15:07:50.013 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:07:50.013 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:07:50.013 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:07:50.179 [Thread-0] INFO  org.mpp2024.Repo_Account - No account found with  username: efa
+15:08:04.467 [Thread-1] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+15:08:04.467 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:08:04.467 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:08:04.468 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:08:04.504 [Thread-1] INFO  org.mpp2024.Repo_Account - Account found: Entity{id=1}
+15:08:05.507 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieving all trips
+15:08:05.507 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+15:08:05.507 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+15:08:05.507 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
+15:08:05.533 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips

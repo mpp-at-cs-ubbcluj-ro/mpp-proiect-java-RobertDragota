@@ -172,11 +172,8 @@ public class AppServicesRpcProxy implements ServiceAppInterface {
 
 
     @Override
-    public Iterable<Trip> Get_All_Trip_By_Destination_From_To(String destination, int startDate, int finishDate) throws AppException {
-        LocalDateTime start = LocalDateTime.of(2024, 1, 1, startDate, 1);
-        LocalDateTime finish = LocalDateTime.of(2024, 1, 1, finishDate, 1);
-        LocalDateTime now = LocalDateTime.now();
-        Trip trip = new Trip(destination,".", 1L,1L,now,start, finish);
+    public Iterable<Trip> Get_All_Trip_By_Destination_From_To(String destination,LocalDateTime date, LocalDateTime startDate, LocalDateTime finishDate) throws AppException {
+        Trip trip = new Trip(destination,".", 1L,1L,date,startDate, finishDate);
         Request request = new Request.Builder().type(RequestType.GET_ALL_TRIP_BY_DESTINATION_FROM_TO).data(trip).build();
         try {
             sendRequest(request);

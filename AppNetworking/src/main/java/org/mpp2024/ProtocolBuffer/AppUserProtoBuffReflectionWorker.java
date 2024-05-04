@@ -1,7 +1,10 @@
-package org.mpp2024.RcpProtocol;
+package org.mpp2024.ProtocolBuffer;
 
 
 import org.mpp2024.*;
+import org.mpp2024.RcpProtocol.Request;
+import org.mpp2024.RcpProtocol.Response;
+import org.mpp2024.RcpProtocol.ResponseType;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -11,7 +14,7 @@ import java.lang.reflect.Method;
 import java.net.Socket;
 
 
-public class AppUserRpcReflectionWorker implements Runnable, AppObserverInterface {
+public class AppUserProtoBuffReflectionWorker implements Runnable, AppObserverInterface {
     private ServiceAppInterface server;
     private Socket connection;
 
@@ -19,7 +22,7 @@ public class AppUserRpcReflectionWorker implements Runnable, AppObserverInterfac
     private ObjectOutputStream output;
     private volatile boolean connected;
 
-    public AppUserRpcReflectionWorker(ServiceAppInterface server, Socket connection) {
+    public AppUserProtoBuffReflectionWorker(ServiceAppInterface server, Socket connection) {
         this.server = server;
         this.connection = connection;
         try {

@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-
+    id "com.google.protobuf" version "0.8.17"
 }
 
 group = 'org.mpp2024'
@@ -16,6 +16,8 @@ dependencies {
     implementation project(':AppServices')
     implementation project(':AppDomain')
     implementation project(':AppPersistance')
+    implementation 'com.google.protobuf:protobuf-java:3.21.7'
+
 }
 
 test {

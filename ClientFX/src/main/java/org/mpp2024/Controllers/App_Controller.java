@@ -9,10 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import org.mpp2024.*;
@@ -25,6 +22,12 @@ import java.util.ResourceBundle;
 import java.util.stream.StreamSupport;
 
 public class App_Controller implements Initializable, AppObserverInterface {
+    @FXML
+    private DatePicker Calendar;
+    @FXML
+    private ComboBox<String> ComboTo;
+    @FXML
+    private ComboBox<String> ComboFrom;
     @FXML
     private TextField destination;
     @FXML
@@ -47,10 +50,7 @@ public class App_Controller implements Initializable, AppObserverInterface {
     private Button booking_button;
     @FXML
     private Button search_button;
-    @FXML
-    private TextField fromHour;
-    @FXML
-    private TextField toHour;
+
     @FXML
     private Button logout_button;
 
@@ -82,7 +82,8 @@ public class App_Controller implements Initializable, AppObserverInterface {
         Arrival_column.setCellValueFactory(new PropertyValueFactory<>("finishHour"));
         Price_column.setCellValueFactory(new PropertyValueFactory<>("price"));
         Seats_column.setCellValueFactory(new PropertyValueFactory<>("availableSeats"));
-
+        ComboFrom.setItems(FXCollections.observableArrayList( "3:00", "3:30", "4:00", "4:30", "5:00", "5:30", "6:00", "6:30", "7:00", "7:30", "8:00", "8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30", "0:00", "0:30", "1:00", "1:30", "2:00", "2:30"));
+        ComboTo.setItems(FXCollections.observableArrayList( "3:00", "3:30", "4:00", "4:30", "5:00", "5:30", "6:00", "6:30", "7:00", "7:30", "8:00", "8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30", "0:00", "0:30", "1:00", "1:30", "2:00", "2:30"));
         FlightTable.setItems(modelTrip);
     }
 
@@ -153,34 +154,40 @@ public class App_Controller implements Initializable, AppObserverInterface {
 
     public void handleSearch(ActionEvent actionEvent) throws AppException {
 
-        if (destination.getText().isEmpty() || fromHour.getText().isEmpty() || toHour.getText().isEmpty()) {
+        if (destination.getText().isEmpty() || ComboFrom.getValue().isEmpty() || ComboTo.getValue().isEmpty()) {
             return;
         }
         FlightTable.getItems().clear();
         String dest = destination.getText();
-        int from = Integer.parseInt(fromHour.getText());
-        int to = Integer.parseInt(toHour.getText());
-
-        if (from > to || from < 0 || from > 24 || to > 24) {
-            System.out.println("Invalid hours");
-            return;
-        }
+        String from = ComboFrom.getValue();
+        String to = ComboTo.getValue();
+        LocalDateTime date = Calendar.getValue().atTime(0, 0);
+        LocalDateTime start = date.plusHours(Integer.parseInt(from.split(":")[0])).plusMinutes(Integer.parseInt(from.split(":")[1]));
+        LocalDateTime finish = date.plusHours(Integer.parseInt(to.split(":")[0])).plusMinutes(Integer.parseInt(to.split(":")[1]));
         {
-            Iterable<Trip> trips = serviceController.Get_All_Trip_By_Destination_From_To(dest, from, to);
+            Iterable<Trip> trips = serviceController.Get_All_Trip_By_Destination_From_To(dest, date,start, finish);
             if(trips!=null) {
-                modelTrip.clear();
-                for (Trip trip : trips) {
-                    modelTrip.add(trip);
+                if(trips.iterator().hasNext()) {
+                    modelTrip.clear();
+                    for (Trip trip : trips) {
+                        modelTrip.add(trip);
+                    }
+                    Platform.runLater(() -> {
+                        FlightTable.setItems(modelTrip);
+                    });
+                }else {
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Info");
+                    alert.setHeaderText(null);
+                    alert.setContentText("This destination has no flights available!");
+                    alert.showAndWait();
+                    initializeTable();
                 }
-                Platform.runLater(() -> {
-                    FlightTable.setItems(modelTrip);
-                });
+
             }
         }
 
         destination.clear();
-        fromHour.clear();
-        toHour.clear();
     }
 
     public void handleLogout(ActionEvent actionEvent) {

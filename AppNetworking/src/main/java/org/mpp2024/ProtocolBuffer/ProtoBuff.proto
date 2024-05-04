@@ -1,0 +1,70 @@
+syntax = "proto3";
+package org.mpp2024.ProtocolBuffer;
+option java_outer_classname = "AppProto";
+message Account{
+  string name = 1;
+  string password = 2;
+}
+
+message Trip{
+  string destination = 1;
+  string transportCompany = 2;
+  int64 price = 3;
+  string availableSeats = 4;
+  string date = 5;
+  string startHour = 6;
+  string finishHour = 7;
+}
+
+message Reservation{
+  string clientName = 1;
+  string phoneNumber = 2;
+  int64 tickets = 3;
+  repeated Trip trip = 4;
+  repeated Account account = 5;
+}
+message TripFilter{
+  string destination = 1;
+  string startHour = 2;
+  string finishHour = 3;
+}
+
+message Request{
+  enum RequestType{
+
+    LOGIN = 0;
+    LOGOUT = 1;
+    REGISTER = 2;
+    MAKE_RESERVATION = 3;
+    GET_ALL_ACCOUNTS = 4;
+    GET_ALL_TRIP = 5;
+    GET_ALL_RESERVATION = 6;
+    GET_ALL_TRIP_BY_DESTINATION_FROM_TO = 7;
+    MAKE_ACCOUNT = 8;
+
+  }
+  RequestType type = 1;
+  Account account = 2;
+  Trip trip = 3;
+  Reservation reservation = 4;
+  TripFilter tripFilter = 5;
+}
+
+message Response{
+  enum ResponseType{
+    LOGIN = 0;
+    OK = 1;
+    ERROR=2;
+    UPDATE=3;
+    GET_ALL_TRIP=4;
+    MAKE_RESERVATION=5;
+    GET_ALL_ACCOUNTS=6;
+    GET_ALL_RESERVATIO=7;
+    GET_ALL_TRIP_BY_DESTINATION_FROM_TO=8;
+  }
+  ResponseType type = 1;
+  repeated Account account = 2;
+  repeated Trip trip = 3;
+  repeated Reservation reservation = 4;
+  repeated TripFilter tripFilter = 5;
+}

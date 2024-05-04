@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.mpp2024.Controllers.App_Controller;
 import org.mpp2024.Controllers.Login_Controller;
 import org.mpp2024.RcpProtocol.AppServicesRpcProxy;
 
