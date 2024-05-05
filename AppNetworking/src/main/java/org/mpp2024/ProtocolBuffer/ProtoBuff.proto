@@ -1,6 +1,7 @@
 syntax = "proto3";
 package org.mpp2024.ProtocolBuffer;
 option java_outer_classname = "AppProto";
+
 message Account{
   string name = 1;
   string password = 2;
@@ -20,8 +21,8 @@ message Reservation{
   string clientName = 1;
   string phoneNumber = 2;
   int64 tickets = 3;
-  repeated Trip trip = 4;
-  repeated Account account = 5;
+   Trip trip = 4;
+   Account account = 5;
 }
 message TripFilter{
   string destination = 1;
@@ -63,8 +64,9 @@ message Response{
     GET_ALL_TRIP_BY_DESTINATION_FROM_TO=8;
   }
   ResponseType type = 1;
-  repeated Account account = 2;
+  Account account = 2;
   repeated Trip trip = 3;
   repeated Reservation reservation = 4;
-  repeated TripFilter tripFilter = 5;
+  string message = 5;
+  TripFilter tripFilter = 6;
 }

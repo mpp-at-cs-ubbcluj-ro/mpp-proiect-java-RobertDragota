@@ -933,3 +933,7 @@ org.postgresql.util.PSQLException: ERROR: operator does not exist: timestamp wit
 15:08:05.507 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
 15:08:05.507 [Thread-1] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
 15:08:05.533 [Thread-1] INFO  org.mpp2024.Repo_Trip - Retrieved 5 trips
+13:51:36.549 [Thread-0] INFO  org.mpp2024.Repo_Account - Finding account with username: Robert
+13:51:36.553 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - trying to connect to database ... jdbc:postgresql://localhost:5432/Travle_Agency
+13:51:36.553 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - user: robert12
+13:51:36.553 [Thread-0] INFO  org.mpp2024.Utility.DB_Utils - pass: Asmodeus011235
